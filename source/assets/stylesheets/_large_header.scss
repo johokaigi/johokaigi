@@ -1,0 +1,14 @@
+.largeHeader {
+  background-color: $brand-color;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+
+  &_siteLogo {
+    max-width: 800px;
+    width: 100%;
+    display: inline-block;
+    margin: 130px 0;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,30 @@
+// Google Font
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+// bootstrap3 stylesheets
+@import 'bootstrap_custom';
+@import 'bootstrap';
+
+// common
+@import 'variables';
+@import 'mixins';
+
+// partials
+@import 'article_list';
+@import 'article';
+@import 'common_footer';
+@import 'common_header_navigation';
+@import 'common_header';
+@import 'information';
+@import 'large_header_navigation';
+@import 'large_header';
+@import 'page_title';
+@import 'section';
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-size-small;
+  }
+}

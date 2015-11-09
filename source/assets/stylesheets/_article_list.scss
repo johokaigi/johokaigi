@@ -1,0 +1,19 @@
+.articleList {
+  @include card;
+
+  &_article {
+    margin: 20px 0;
+  }
+
+  &_title {
+    margin: 0;
+    font: {
+      size: 1.2em;
+      weight: bold;
+    }
+  }
+
+  &_time {
+    font-size: .85em;
+  }
+}

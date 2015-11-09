@@ -1,0 +1,14 @@
+$font-size-base: 18px;
+$font-family-sans-serif: 'Noto Sans Japanese', sans-serif;
+
+$brand-primary: #f5b417;
+$brand-info: rgba(#000, .4);
+
+$body-bg: #f8f8f8;
+$text-color: #4a4a4a;
+$link-color: $brand-primary;
+
+$line-height-base: 1.7;
+
+$grid-gutter-width: 30px !default;
+$container-large-desktop: (820px + $grid-gutter-width);

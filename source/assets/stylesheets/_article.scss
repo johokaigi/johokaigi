@@ -1,0 +1,80 @@
+.article {
+  @include card;
+
+  &_time {
+    border-bottom: 2px solid $text-color;
+    font-size: .9em;
+    padding-bottom: 3px;
+  }
+
+  &_authorInfo {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: .9em;
+  }
+
+  &_authorImage {
+    @include square(22px);
+    border-radius: 50%;
+    vertical-align: top;
+    margin: {
+      top: 2px;
+      right: 4px;
+      left: 10px;
+    }
+  }
+
+  &_authorName {
+    display: inline;
+  }
+
+  &_title {
+    margin-bottom: 40px;
+    line-height: 1.4;
+    font: {
+      size: 2.2em;
+      weight: bold;
+    }
+  }
+
+  &_body {
+    h2,
+    h3,
+    h4 {
+      line-height: 1.4;
+      font-weight: bold;
+      margin: {
+        top: 30px;
+        bottom: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      font-size: 1.8em;
+      padding-bottom: 5px;
+      border-bottom: 3px solid $brand-color;
+    }
+
+    h3 {
+      font-size: 1.6em;
+    }
+
+    h4 {
+      font-size: 1.4em;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    &_title {
+      font-size: 1.8em;
+    }
+
+    &_body {
+      h2 { font-size: 1.4em; }
+      h3 { font-size: 1.4em; }
+      h4 { font-size: 1.2em; }
+    }
+  }
+}

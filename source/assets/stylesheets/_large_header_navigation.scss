@@ -1,0 +1,17 @@
+.largeHeaderNavigation {
+  padding: 30px 0;
+
+  &_list {
+    @include textlink(#fff);
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 15px 0;
+
+    &_list {
+      margin: 0 5px;
+    }
+  }
+}

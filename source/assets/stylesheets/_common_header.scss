@@ -1,0 +1,16 @@
+.commonHeader {
+  background-color: $brand-color;
+  height: $header-height;
+
+  &_siteLogo {
+    $margin: 12px;
+    max-height: $header-height - $margin * 2;
+    margin: $margin 0;
+    display: inline-block;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+    vertical-align: middle;
+  }
+}

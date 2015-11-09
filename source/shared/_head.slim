@@ -1,0 +1,21 @@
+meta[charset='UTF-8']
+title = page_title
+meta[name='description' content="#{page_description}"]
+
+meta[property='og:site_name' content='JohoKaigi - 情報会議']
+meta[property='og:type' content='website']
+meta[property='og:url' content="http://johokaigi.github.io#{current_page.url}"]
+meta[property='og:title' content="#{page_title}"]
+meta[property='og:image' content="#{current_page.data.og_image_url || ''}"]
+meta[property='og:description' content="#{page_description}"]
+/ FIXME : Set correct app_id
+meta[property='fb:app_id' content='################']
+
+meta[name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0']
+
+link[rel='shortcut icon' type='image/x-icon' href='/favicon.ico']
+link[rel='icon' type='image/png' href='/favicon.png']
+link[rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css']
+
+= stylesheet_link_tag 'application'
+= javascript_include_tag 'application'
