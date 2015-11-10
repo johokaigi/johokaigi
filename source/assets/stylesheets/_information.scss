@@ -1,0 +1,14 @@
+.information {
+  margin: 20px 0;
+  &_title {
+    margin: 0;
+    font: {
+      size: 1.3em;
+      weight: normal;
+    }
+  }
+
+  &_time {
+    font-size: .9em;
+  }
+}

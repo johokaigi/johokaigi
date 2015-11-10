@@ -1,0 +1,25 @@
+# This file overrides https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+scss_files: 'source/assets/stylesheets/*.scss'
+
+linters:
+  ColorVariable:
+    enabled: false
+
+  # Checks the declaration order of properties.
+  PropertySortOrder:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false
+
+  NameFormat:
+    enabled: false
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+    ignore_parent_selectors: true
+
+  ImportantRule:
+    enabled: false

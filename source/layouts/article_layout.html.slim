@@ -1,0 +1,25 @@
+doctype html
+
+html
+  head[prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#']
+    = partial 'shared/head'
+
+  body
+    = partial 'shared/facebook_sdk'
+
+    = partial 'shared/common_header'
+
+    .container
+      article.article
+        time.article_time = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
+        h1.article_title = current_page.data.title
+        .article_body = yield
+
+        .article_authorInfo
+          | by
+          - data.humans.each do |human|
+            - if human.name == current_page.data.author
+              = image_tag human.profile_image_url, class: 'article_authorImage'
+          .article_authorName = current_page.data.author
+
+    = partial 'shared/common_footer'

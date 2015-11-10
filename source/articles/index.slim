@@ -1,0 +1,8 @@
+.container
+  h1.pageTitle 記事一覧
+  ul.list-unstyled.articleList
+    - blog.articles.each do |article|
+      li
+        article.articleList_article
+          h1.articleList_title = link_to article.title, article
+          time.articleList_time = article.date.strftime('%Y/%m/%d')

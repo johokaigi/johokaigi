@@ -1,0 +1,14 @@
+.commonHeaderNavigation {
+  float: right;
+
+  &_list {
+    @include textlink(#fff);
+    display: inline-block;
+
+    a {
+      line-height: $header-height;
+      padding: 0 10px;
+      font-size: .85em;
+    }
+  }
+}

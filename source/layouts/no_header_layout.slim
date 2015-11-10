@@ -1,0 +1,12 @@
+doctype html
+
+html
+  head[prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#']
+    = partial 'shared/head'
+
+  body
+    = partial 'shared/facebook_sdk'
+
+    = yield
+
+    = partial 'shared/common_footer'
