@@ -10,16 +10,16 @@ html
     = partial 'shared/common_header'
 
     .container
-      article.article
-        time.article_time = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
-        h1.article_title = current_page.data.title
-        .article_body = yield
+      article.article[itemscope itemtype='http://schema.org/Article']
+        time.article_time[itemprop='datePublished'] = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
+        h1.article_title[itemporp='name'] = current_page.data.title
+        .article_body[itemprop='articleBody'] = yield
 
-        .article_authorInfo
+        .article_authorInfo[itemprop='author' itemscope itemtype='http://schema.org/Person']
           | by
           - data.humans.each do |human|
             - if human.name == current_page.data.author
               = image_tag human.profile_image_url, class: 'article_authorImage'
-          .article_authorName = current_page.data.author
+          .article_authorName[itemprop='name'] = current_page.data.author
 
     = partial 'shared/common_footer'
