@@ -1,4 +1,6 @@
 language: ruby
+ruby:
+    - "2.2.3"
 script: bundle exec middleman build
 env:
   global:
