@@ -2,9 +2,9 @@ organizers:
   - name: htomine
     url: https://twitter.com/htomine
     profile_image_url: /assets/images/profile_images/htomine.png
-  - name: so1
+  - name: so1_
     url: https://twitter.com/so1_
-    profile_image_url: /assets/images/profile_images/so1.jpg
+    profile_image_url: /assets/images/profile_images/so1_.jpg
 
 authors:
   - name: htomine
