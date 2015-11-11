@@ -1,15 +1,20 @@
-- name: htomine
-  full_name: Hiroyuki Tomine
-  twitter: https://twitter.com/htomine
-  profile_image_url: /assets/images/profile_images/htomine.png
-- name: so1
-  full_name: Soichi Kitamura
-  twitter: https://twitter.com/so1_
-- name: mico-mico
-  full_name: Mika Nakane
-- name: kony
-  full_name: Tomoya Konishi
-  email: kns.tmy@gmail.com
-  twitter: https://twitter.com/konycc
-  profile_image_url: /assets/images/profile_images/kony.png
-  profile_image_url: /assets/images/profile_images/so1.jpg
+organizers:
+  - name: htomine
+    url: https://twitter.com/htomine
+    profile_image_url: /assets/images/profile_images/htomine.png
+  - name: so1
+    url: https://twitter.com/so1_
+    profile_image_url: /assets/images/profile_images/so1.jpg
+authors:
+  - name: htomine
+    url: https://twitter.com/htomine
+    profile_image_url: /assets/images/profile_images/htomine.png
+  - name: so1
+    url: https://twitter.com/so1_
+    profile_image_url: /assets/images/profile_images/so1.jpg
+  - name: mico-mico
+    url: https://twitter.com/mico_mico
+    profile_image_url: /assets/images/profile_images/mico-mico.jpg
+  - name: kony
+    url: https://github.com/konycc
+    profile_image_url: /assets/images/profile_images/kony.png
