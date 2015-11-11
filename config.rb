@@ -31,7 +31,7 @@ helpers do
   end
 
   def page_url
-    'http://johokaigi.org' + %r{^(.*)/$}.match(current_page.url)[1]
+    "http://johokaigi.org#{current_page.url}"
   end
 end
 
