@@ -17,7 +17,7 @@ html
 
         .article_authorInfo[itemprop='author' itemscope itemtype='http://schema.org/Person']
           | by
-          - data.humans.each do |human|
+          - data.humans.authors.each do |human|
             - if human.name == current_page.data.author
               = image_tag human.profile_image_url, class: 'article_authorImage'
           .article_authorName[itemprop='name'] = current_page.data.author
