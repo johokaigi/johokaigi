@@ -4,7 +4,7 @@
       - if cat.name == category
         = cat.ja
   ul.list-unstyled.articleList
-    - blog.articles.each do |article|
+    - blog.articles.select { |a| a.data[:category] == category }.each do |article|
       li
         article.articleList_article
           h1.articleList_title = link_to article.title, article
