@@ -1,8 +1,8 @@
 - name: htomine
   full_name: Hiroyuki Tomine
-  email: htomine@qiita.com
   twitter: https://twitter.com/htomine
-- name: so1_
+  profile_image_url: /assets/images/profile_images/htomine.png
+- name: so1
   full_name: Soichi Kitamura
   twitter: https://twitter.com/so1_
 - name: mico-mico
@@ -12,3 +12,4 @@
   email: kns.tmy@gmail.com
   twitter: https://twitter.com/konycc
   profile_image_url: /assets/images/profile_images/kony.png
+  profile_image_url: /assets/images/profile_images/so1.jpg
