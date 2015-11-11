@@ -1,8 +1,12 @@
+- content_for(:title) do
+  - data.categories.select { |cat| cat.name == category }[0].ja
+- content_for(:description) do
+  = data.categories.select { |cat| cat.name == category }[0].ja
+  | カテゴリの記事一覧です。
+
 .container
   h1.pageTitle
-    - data.categories.each do |cat|
-      - if cat.name == category
-        = cat.ja
+    = data.categories.select { |cat| cat.name == category }[0].ja
   ul.list-unstyled.articleList
     - blog.articles.select { |a| a.data[:category] == category }.each do |article|
       li

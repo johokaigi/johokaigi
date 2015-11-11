@@ -22,12 +22,23 @@ page '/', layout: 'no_header_layout'
 
 helpers do
   def page_title
-    current_page.data.title ? "#{current_page.data.title} | JohoKaigi - 情報会議" : 'JohoKaigi - 情報会議'
+    if current_page.data.title
+      "#{current_page.data.title} | JohoKaigi - 情報会議"
+    elsif yield_content(:title)
+      "#{yield_content(:title)} | JohoKaigi - 情報会議"
+    else
+      'JohoKaigi - 情報会議'
+    end
   end
 
   def page_description
-    base_description = 'JohoKaigi - 情報会議は、チームでの情報共有について、Tipsや悩みの共有や集約を通して、情報の共有方法や情報共有をする文化作りをする方法を整理するためのコミュニティです。'
-    current_page.data.description || base_description
+    if current_page.data.description
+      current_page.data.description
+    elsif yield_content(:description)
+      yield_content(:description)
+    else
+      'JohoKaigi - 情報会議は、チームでの情報共有について、Tipsや悩みの共有や集約を通して、情報の共有方法や情報共有をする文化作りをする方法を整理するためのコミュニティです。'
+    end
   end
 
   def page_url

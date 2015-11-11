@@ -1,5 +1,10 @@
+---
+title: 記事一覧
+description: 情報会議が発信している記事の一覧です。
+---
+
 .container
-  h1.pageTitle 記事一覧
+  h1.pageTitle = current_page.data.title
   ul.list-unstyled.articleList
     - blog.articles.each do |article|
       li
