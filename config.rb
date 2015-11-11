@@ -47,5 +47,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.branch = 'gh-pages'
+  deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/htomine/johokaigi"
   deploy.build_before = true
 end

@@ -1,3 +1,11 @@
+language: ruby
+script: bundle exec middleman build
 env:
   global:
-    secure: Vx/KcrzqXQXFmv19sTAeQP+90AUPPveUcdyss5HUts1RfQnSeKt35UJGEMSnCDLK3r29teQh1lTv47ac0WFY/1yKdj8m6c+N47+U9mqYGz7lUMfMOtYyc+t+VXCxp+fkLF2YY6e7yYuXqB1EfBuwTnXINFiy1+SM2dhspD8nub03tMWdjFiBsDCt+XYIwujVw1CAIVf5iQZG7WLseboMDOn65fv8EtAKkOUw20g20pI+ef5rFV4TC6Rw41QQ/I4EV+9wkGib74zNEfwAly/nwXtxMAqc0/CmQwaSu/XckGBbMVQJI0U0KoLGMQWnKO3ilHx3AyjRDQCAsyO8uWDsj7m7nOgBpsrr2QeNFHtgdHxhg11EJPxWphM88GVeOzXjpK4SrTrhO+3n+vvU8JhiRShdS4cHHAwNZnp8f2yKEjWVCZ0pHdpMUoQMnlDVQW4+Vhu1gJn8WlZglSDPv/+Eo+sDtyKwS0AhfcQTsRn+gNwu1982U6SHVBszggNklpa2hZqzusxEKuNtX/9S9VthoXL8gZ2M5VVLBLzVhWUtljJb280KCzIWL29qtVTfeV79OLdFzXIylxhDYH6PBNAsj+cdfAffz1bZUl1exBwjjXGzJtNNHBjbGSJI7CqLwfc0hyANbrVlQRVgiJj+lKFUVTdlk9fIx7F+B11mSA56u3E=
+    - GIT_COMMITTER_NAME='htomine@travis-ci'
+    - GIT_COMMITTER_EMAIL='htomine@qiita.com'
+    - GIT_AUTHOR_NAME='htomine@travis-ci'
+    - GIT_AUTHOR_EMAIL='htomine@qiita.com'
+    - secure: Vx/KcrzqXQXFmv19sTAeQP+90AUPPveUcdyss5HUts1RfQnSeKt35UJGEMSnCDLK3r29teQh1lTv47ac0WFY/1yKdj8m6c+N47+U9mqYGz7lUMfMOtYyc+t+VXCxp+fkLF2YY6e7yYuXqB1EfBuwTnXINFiy1+SM2dhspD8nub03tMWdjFiBsDCt+XYIwujVw1CAIVf5iQZG7WLseboMDOn65fv8EtAKkOUw20g20pI+ef5rFV4TC6Rw41QQ/I4EV+9wkGib74zNEfwAly/nwXtxMAqc0/CmQwaSu/XckGBbMVQJI0U0KoLGMQWnKO3ilHx3AyjRDQCAsyO8uWDsj7m7nOgBpsrr2QeNFHtgdHxhg11EJPxWphM88GVeOzXjpK4SrTrhO+3n+vvU8JhiRShdS4cHHAwNZnp8f2yKEjWVCZ0pHdpMUoQMnlDVQW4+Vhu1gJn8WlZglSDPv/+Eo+sDtyKwS0AhfcQTsRn+gNwu1982U6SHVBszggNklpa2hZqzusxEKuNtX/9S9VthoXL8gZ2M5VVLBLzVhWUtljJb280KCzIWL29qtVTfeV79OLdFzXIylxhDYH6PBNAsj+cdfAffz1bZUl1exBwjjXGzJtNNHBjbGSJI7CqLwfc0hyANbrVlQRVgiJj+lKFUVTdlk9fIx7F+B11mSA56u3E=
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'
