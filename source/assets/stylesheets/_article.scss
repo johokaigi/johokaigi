@@ -7,11 +7,16 @@
     padding-bottom: 3px;
   }
 
-  &_authorInfo {
+  &_footer {
+    @include clearfix;
     margin-top: 50px;
     padding-top: 20px;
     border-top: 1px solid #eee;
     font-size: .9em;
+  }
+
+  &_authorInfo {
+    display: inline-block;
   }
 
   &_authorImage {
@@ -27,6 +32,29 @@
 
   &_authorName {
     display: inline;
+  }
+
+  &_socialButtons {
+    float: right;
+    display: inline-block;
+  }
+
+  &_tweetBtn {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &_likeBtn {
+    display: inline-block;
+
+    .fb-like > span {
+      vertical-align: top !important;
+    }
+  }
+
+  &_hatenaBtn {
+    display: inline-block;
+    margin-left: 10px;
   }
 
   &_title {
