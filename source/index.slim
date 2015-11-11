@@ -48,3 +48,21 @@ section.section.hidden-xs
       .col-sm-6
         aside
           | <a class="twitter-timeline" href="https://twitter.com/JohoKaigi" data-widget-id="663690851407654913" data-height="400px">@JohoKaigiさんのツイート</a>
+
+section.section
+  .container
+    h2.section_title オーガナイザー
+    ul.list-unstyled.list-inline.organizers
+      - data.humans.organizers.each do |human|
+        li.organizers_list
+          = link_to human.url do
+            = image_tag human.profile_image_url, class: 'organizers_icon'
+            .organizers_name = human.name
+
+    .sponsorsText
+      p
+        | Started by #{link_to 'Increments Inc.', 'http://increments.co.jp/'}
+        br
+        | Original web site design by #{link_to 'kony', 'https://github.com/konycc'} from Increments Inc.
+        br
+        | Hosted by #{link_to 'GitHub', 'https://github.com/htomine/johokaigi'}
