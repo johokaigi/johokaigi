@@ -15,7 +15,7 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 ファイル名は `YYYY-MM-DD-TITLE.html.md` というフォーマットである必要があります。  
 例) `2015-11-10-first-post.html.md`
 
-また、ファイル内では以下のフォーマットに沿って記述する必要があります。
+また、ファイル内では以下のフォーマットに沿って記述する必要があります。  
 **※dateはファイル名の日付と一致している必要があります。**
 
 ```
@@ -31,3 +31,7 @@ category: information|eventreport (どちらでもない場合は行ごと削除
 〜ここに本文を入力〜
 
 ```
+
+categoryに `information` を指定すると、http://johokaigi.org/articles/categories/information.html に記事が表示されます。  
+categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。  
+上記以外のカテゴリを指定しても現在はなにも起きません。
