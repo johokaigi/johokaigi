@@ -78,6 +78,10 @@ section.section
             = image_tag human.profile_image_url, class: 'organizers_icon'
             .organizers_name = human.name
 
+    p.text-center
+      | お問い合わせ:
+      =< link_to 'フォームを開く', 'http://goo.gl/forms/8MsDcCYBLJ', target: '_blank'
+
     .sponsorsText
       p
         | Started by #{link_to 'Increments Inc.', 'http://increments.co.jp/', target: '_blank'}
