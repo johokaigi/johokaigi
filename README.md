@@ -21,11 +21,10 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 ```
 ---
 title: 記事のタイトル
-date: YYYY-MM-DD HH:MM
+date: YYYY-MM-DD HH:MM (ファイル名の日付とそろえること。時間は自由。)
 author: (https://github.com/htomine/johokaigi/blob/master/data/humans.yml のauthorsにあるnameを記入してください)
 og_image_url: (og:imageに特別な指定がない場合は行ごと削除してください)
-tags: (自由入力、不要なら行ごと削除してください)
-category: information|eventreport (どちらでもない場合は行ごと削除してください)
+category: eventreport (イベントレポート以外の記事の場合は行ごと削除してください)
 ---
 
 〜ここに本文を入力〜
