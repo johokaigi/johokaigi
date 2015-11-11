@@ -35,3 +35,6 @@ category: information|eventreport (どちらでもない場合は行ごと削除
 categoryに `information` を指定すると、http://johokaigi.org/articles/categories/information.html に記事が表示されます。  
 categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。  
 上記以外のカテゴリを指定しても現在はなにも起きません。
+
+# 次回イベント情報の更新
+https://github.com/htomine/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。
