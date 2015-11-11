@@ -23,12 +23,13 @@ section.section
       | チーム内に留まりがちなこういった状況を、普段なかなか話す機会のないチーム外の人たちと共有し、
       | 新しい気づきを持ち帰っていただけたら嬉しいです。
 
-section.section
-  .container
-    h2.section_title 次回イベント情報
-    .row
-      .col-sm-10.col-sm-offset-1
-        | <iframe frameborder="0" width="100%" height="422" src="https://peatix.com/event/126209/share/widget?z=1&t=1&a=1"></iframe>
+- if data.peatix.try(:first)
+  section.section
+    .container
+      h2.section_title 次回イベント情報
+      .row
+        .col-sm-10.col-sm-offset-1
+          = data.peatix.first
 
 section.section
   .container
