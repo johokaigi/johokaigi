@@ -29,6 +29,10 @@ helpers do
     base_description = 'チームでの情報共有ツールの活用について、悩みや知見を共有したり、方法論を整理するイベントをやっています。'
     current_page.data.description || base_description
   end
+
+  def page_url
+    'http://johokaigi.org' + %r{^(.*)/$}.match(current_page.url)[1]
+  end
 end
 
 set :css_dir, 'assets/stylesheets'
