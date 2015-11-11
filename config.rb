@@ -26,7 +26,7 @@ helpers do
   end
 
   def page_description
-    base_description = 'チームでの情報共有ツールの活用について、悩みや知見を共有したり、方法論を整理するイベントをやっています。'
+    base_description = 'JohoKaigi - 情報会議は、チームでの情報共有について、Tipsや悩みの共有や集約を通して、情報の共有方法や情報共有をする文化作りをする方法を整理するためのコミュニティです。'
     current_page.data.description || base_description
   end
 
