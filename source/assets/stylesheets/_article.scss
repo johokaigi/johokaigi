@@ -92,6 +92,9 @@
     h4 {
       font-size: 1.4em;
     }
+    img {
+      max-width: 100%;
+    }
   }
 
   @media (max-width: $screen-xs-max) {
