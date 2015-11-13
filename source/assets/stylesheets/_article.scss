@@ -97,6 +97,10 @@
     img {
       max-width: 100%;
     }
+
+    p {
+      margin: 1em 0;
+    }
   }
 
   @media (max-width: $screen-xs-max) {
