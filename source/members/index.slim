@@ -17,8 +17,8 @@ descriptipon: 情報会議の関係者一覧です。
 
     h2.humansList_title 協力
     ul.list-unstyled.list-inline
-      - data.humans.authors.select { |h| !data.humans.organizers.map { |o| o.name }.include?(h.name) }.each do |author|
+      - data.humans.supporters.each do |supporter|
         li.humansList_item
-          = image_tag author.profile_image_url, class: 'humansList_image'
-          .humansList_name = author.name
-          .humansList_url = link_to author.url, author.url, target: '_blank'
+          = image_tag supporter.profile_image_url, class: 'humansList_image'
+          .humansList_name = supporter.name
+          .humansList_url = link_to supporter.url, supporter.url, target: '_blank'

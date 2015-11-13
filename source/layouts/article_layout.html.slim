@@ -18,10 +18,10 @@ html
         .article_footer
           .article_authorInfo[itemprop='author' itemscope itemtype='http://schema.org/Person']
             | by
-            - data.humans.authors.each do |human|
-              - if human.name == current_page.data.author
-                = link_to '/humans' do
-                  = image_tag human.profile_image_url, class: 'article_authorImage'
+            - members.each do |member|
+              - if member.name == current_page.data.author
+                = link_to '/members' do
+                  = image_tag member.profile_image_url, class: 'article_authorImage'
 
                   .article_authorName[itemprop='name'] = current_page.data.author
 

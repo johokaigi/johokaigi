@@ -44,6 +44,12 @@ helpers do
   def page_url
     "http://johokaigi.org#{current_page.url}"
   end
+
+  def members
+    arr = data.humans.organizers
+    data.humans.supporters.each { |s| arr << s }
+    arr
+  end
 end
 
 set :css_dir, 'assets/stylesheets'

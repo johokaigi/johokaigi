@@ -23,7 +23,7 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 title: 記事のタイトル
 date: YYYY-MM-DD HH:MM (ファイル名の日付とそろえること。時間は自由。)
 description: (検索結果に表示する説明文です。250文字以内でかんたんな説明を記述してください。)
-author: (https://github.com/htomine/johokaigi/blob/master/data/humans.yml のauthorsにあるnameを記入してください)
+author: (https://github.com/htomine/johokaigi/blob/master/data/humans.yml にあるnameを記入してください)
 og_image_url: (og:imageに特別な指定がない場合は行ごと削除してください)
 category: eventreport (イベントレポート以外の記事の場合は行ごと削除してください)
 ---
