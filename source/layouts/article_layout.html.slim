@@ -20,7 +20,7 @@ html
             | by
             - members.each do |member|
               - if member.name == current_page.data.author
-                = link_to '/members' do
+                = link_to '/staff' do
                   = image_tag member.profile_image_url, class: 'article_authorImage'
 
                   .article_authorName[itemprop='name'] = current_page.data.author
