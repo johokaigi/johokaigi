@@ -1,15 +1,12 @@
 .commonHeader
   .container
-    .row
-      .col-sm-3
-        = link_to '/' do
-          = image_tag '/assets/images/logo.svg', class: 'commonHeader_siteLogo',
-                      title: 'JohoKaigi - 情報会議', alt: 'JohoKaigi - 情報会議'
+    = link_to '/', class: 'commonHeader_siteLogo' do
+      = image_tag '/assets/images/logo.svg', class: 'commonHeader_siteLogoImg',
+                  title: 'JohoKaigi - 情報会議', alt: 'JohoKaigi - 情報会議'
 
-      .col-sm-9.hidden-xs
-        nav.commonHeaderNavigation
-          ul.list-unstyled
-            li.commonHeaderNavigation_list = link_to 'トップ', '/'
-            li.commonHeaderNavigation_list = link_to '記事一覧', '/articles'
-            li.commonHeaderNavigation_list = link_to 'イベントレポート', category_path('eventreport')
-            li.commonHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
+    nav.commonHeaderNavigation.hidden-xs
+      ul.list-unstyled
+        li.commonHeaderNavigation_list = link_to 'トップ', '/'
+        li.commonHeaderNavigation_list = link_to '記事一覧', '/articles'
+        li.commonHeaderNavigation_list = link_to 'イベントレポート', category_path('eventreport')
+        li.commonHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
