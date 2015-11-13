@@ -19,6 +19,7 @@ activate :blog do |blog|
 end
 
 page '/', layout: 'no_header_layout'
+page 'sitemap.xml', layout: 'xml_layout'
 
 helpers do
   def page_title
