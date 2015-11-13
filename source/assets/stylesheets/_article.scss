@@ -1,6 +1,5 @@
 .article {
   @include card;
-  font-size: 17px;
 
   &_time {
     border-bottom: 2px solid $text-color;
