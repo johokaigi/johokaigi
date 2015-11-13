@@ -20,9 +20,10 @@ html
             | by
             - data.humans.authors.each do |human|
               - if human.name == current_page.data.author
-                = image_tag human.profile_image_url, class: 'article_authorImage'
+                = link_to '/humans' do
+                  = image_tag human.profile_image_url, class: 'article_authorImage'
 
-            .article_authorName[itemprop='name'] = current_page.data.author
+                  .article_authorName[itemprop='name'] = current_page.data.author
 
           .article_socialButtons.hidden-xs
             .article_tweetBtn

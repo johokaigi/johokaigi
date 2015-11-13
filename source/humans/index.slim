@@ -1,0 +1,24 @@
+---
+title: 関係者一覧
+descriptipon:
+---
+
+.container
+  h1.pageTitle
+    = current_page.data.title
+  .humansList
+    h2.humansList_title オーガナイザー
+    ul.list-unstyled.list-inline
+      - data.humans.organizers.each do |organizer|
+        li.humansList_item
+          = image_tag organizer.profile_image_url, class: 'humansList_image'
+          .humansList_name = organizer.name
+          .humansList_url = link_to organizer.url, organizer.url, target: '_blank'
+
+    h2.humansList_title 協力
+    ul.list-unstyled.list-inline
+      - data.humans.authors.select { |h| !data.humans.organizers.map { |o| o.name }.include?(h.name) }.each do |author|
+        li.humansList_item
+          = image_tag author.profile_image_url, class: 'humansList_image'
+          .humansList_name = author.name
+          .humansList_url = link_to author.url, author.url, target: '_blank'

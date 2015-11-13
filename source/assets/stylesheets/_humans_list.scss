@@ -1,0 +1,42 @@
+.humansList {
+  @include card;
+
+  &_title {
+    display: inline-block;
+    margin: 0 0 30px;
+    border-bottom: 3px solid $brand-color;
+    padding-bottom: 5px;
+    font: {
+      size: 1.8em;
+      weight: normal;
+    }
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  &_item {
+    margin-right: 10px;
+  }
+
+  &_image {
+    @include square(30px);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: {
+      top: 3px;
+      right: 3px;
+    }
+  }
+
+  &_name {
+    font-size: 1.2em;
+    display: inline;
+  }
+
+  &_url {
+    font-size: .8em;
+  }
+}
