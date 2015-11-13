@@ -46,7 +46,8 @@ helpers do
   end
 
   def members
-    arr = data.humans.organizers
+    arr = []
+    data.humans.organizers.each { |o| arr << o }
     data.humans.supporters.each { |s| arr << s }
     arr
   end
