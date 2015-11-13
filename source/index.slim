@@ -41,13 +41,24 @@ section.section
       | チーム内に留まりがちなこういった状況を、普段なかなか話す機会のないチーム外の人たちと共有し、
       | 新しい気づきを持ち帰っていただけたらうれしいです。
 
-- if data.peatix.try(:first)
-  section.section
-    .container
-      h2.section_title 次回イベント情報
+section.section
+  .container
+    h2.section_title 次回イベント情報
+    - if data.peatix.try(:first)
       .row
         .col-sm-10.col-sm-offset-1
           = data.peatix.first
+    - else
+      .row
+        .col-sm-10.col-sm-offset-1.section_waitingList
+          p 
+            | 次回イベントの詳細は未定です
+            =< image_tag 'https://cdn.qiita.com/emoji/unicode/1f647.png', class: 'emoji', title: ':bow:', alt: ':bow:',  height: '20', width: '20', align: 'absmiddle'
+          p 参加してみたい！という方は下記フォームに連絡先をどうぞ。
+          p 開催決定時、優先的にご連絡します。
+          p 
+            =link_to 'JohoKaigi 情報会議に参加したい - Google Forms', 'https://goo.gl/mOuwJ8',  target: '_blank'
+          
 
 section.section
   .container
