@@ -1,5 +1,12 @@
 footer.commonFooter
-  | &copy; JohoKaigi - 情報会議
+  .container
+    | &copy; JohoKaigi - 情報会議
+
+    ul.list-unstyled.list-inline.commonFooter_navigation
+      li = link_to 'トップ', '/'
+      li = link_to '記事一覧', '/articles'
+      li = link_to 'ロゴデータ', '/resources'
+      li = link_to '情報発信ガイドライン', '/publishing-guideline'
 
 | <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
 | <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
