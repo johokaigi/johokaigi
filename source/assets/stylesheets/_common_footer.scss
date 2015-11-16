@@ -1,5 +1,9 @@
 .commonFooter {
+  @include clearfix;
   font-size: 16px;
-  text-align: center;
   margin: 30px 0;
+
+  &_navigation {
+    float: right;
+  }
 }
