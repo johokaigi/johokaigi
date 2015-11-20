@@ -3,8 +3,8 @@
     nav.largeHeaderNavigation
       ul.list-unstyled
         li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
-        li.largeHeaderNavigation_list = link_to 'イベントレポート', category_path('eventreport')
         li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
+        li.largeHeaderNavigation_list = link_to '情報発信ガイドライン', '/publishing-guideline'
 
     = image_tag '/assets/images/logo.svg', class: 'largeHeader_siteLogo',
                 title: 'JohoKaigi - 情報会議', alt: 'JohoKaigi - 情報会議'
@@ -51,14 +51,14 @@ section.section
     - else
       .row
         .col-sm-10.col-sm-offset-1.section_waitingList
-          p 
+          p
             | 次回イベントの詳細は未定です
             =< image_tag 'https://cdn.qiita.com/emoji/unicode/1f647.png', class: 'emoji', title: ':bow:', alt: ':bow:',  height: '20', width: '20', align: 'absmiddle'
           p 参加してみたい！という方は下記フォームに連絡先をどうぞ。
           p 開催決定時、優先的にご連絡します。
-          p 
+          p
             =link_to 'JohoKaigi 情報会議に参加したい - Google Forms', 'https://goo.gl/mOuwJ8',  target: '_blank'
-          
+
 
 section.section
   .container

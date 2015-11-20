@@ -4,7 +4,9 @@ description: 情報会議が発信している記事の一覧です。
 ---
 
 .container
-  h1.pageTitle = current_page.data.title
+  .pageHeader
+    h1.pageHeader_title = current_page.data.title
+    = partial 'shared/articles_navigation', locals: { current: 'index' }
   ul.list-unstyled.articleList
     - blog.articles.each do |article|
       li

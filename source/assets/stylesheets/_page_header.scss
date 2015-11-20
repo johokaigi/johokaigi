@@ -1,0 +1,11 @@
+.pageHeader {
+  position: relative;
+  min-height: 30px;
+
+  &_title {
+    font: {
+      size: 2em;
+      weight: normal;
+    }
+  }
+}
