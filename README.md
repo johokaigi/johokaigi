@@ -18,22 +18,9 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 また、ファイル内では以下のフォーマットに沿って記述する必要があります。  
 **※dateはファイル名の日付と一致している必要があります。**
 
-```
----
-title: 記事のタイトル
-date: YYYY-MM-DD HH:MM (ファイル名の日付とそろえること。時間は自由。)
-description: (検索結果に表示する説明文です。250文字以内でかんたんな説明を記述してください。)
-author: (https://github.com/htomine/johokaigi/blob/master/data/humans.yml にあるnameを記入してください)
-og_image_url: (og:imageに特別な指定がない場合は行ごと削除してください)
-category: eventreport (イベントレポート以外の記事の場合は行ごと削除してください)
----
+[記事ファイル内のフォーマット](https://github.com/htomine/johokaigi/blob/master/article_template.erb)
 
-〜ここに本文を入力〜
-
-```
-
-categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。  
-上記以外のカテゴリを指定しても現在はなにも起きません。
+categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。
 
 # 次回イベント情報の更新
 https://github.com/htomine/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。

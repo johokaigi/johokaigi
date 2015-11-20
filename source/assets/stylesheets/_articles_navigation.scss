@@ -1,0 +1,24 @@
+.articlesNavigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 7px 0;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  .active {
+    border-radius: 1em;
+    padding: 4px 12px;
+    background-color: $brand-primary;
+    color: #fff;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 30px 0;
+  }
+}

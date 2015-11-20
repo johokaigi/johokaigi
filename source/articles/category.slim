@@ -5,8 +5,10 @@
   | カテゴリの記事一覧です。
 
 .container
-  h1.pageTitle
-    = data.categories.select { |cat| cat.name == category }[0].ja
+  .pageHeader
+    h1.pageHeader_title
+      = data.categories.select { |cat| cat.name == category }[0].ja
+    = partial 'shared/articles_navigation', locals: { current: category }
   ul.list-unstyled.articleList
     - blog.articles.select { |a| a.data[:category] == category }.each do |article|
       li

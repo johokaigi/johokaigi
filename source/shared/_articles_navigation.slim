@@ -1,0 +1,5 @@
+nav.articlesNavigation
+  ul.list-unstyled.list-inline
+    li = link_to '記事一覧', '/articles', class: "#{'active' if current == 'index'}"
+    li = link_to 'イベントレポート', category_path('eventreport'), class: "#{'active' if current == 'eventreport'}"
+    li = link_to '掲載実績', category_path('media'), class: "#{'active' if current == 'media'}"
