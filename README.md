@@ -7,7 +7,7 @@ JohoKaigi - 情報会議に関する情報をまとめているページです�
 masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチへデプロイしてくれます。
 
 # 記事の編集・追加
-記事は https://github.com/htomine/johokaigi/tree/master/source/articles/items に格納されています。  
+記事は https://github.com/johokaigi/johokaigi/tree/master/source/articles/items に格納されています。  
 記事を編集する場合はGitHub上で編集できるのでその場で編集し、Pull Requestを作成してください。
 記事を追加する場合はこのディレクトリに新しいファイルを作成してください。
 
@@ -18,9 +18,9 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 また、ファイル内では以下のフォーマットに沿って記述する必要があります。  
 **※dateはファイル名の日付と一致している必要があります。**
 
-[記事ファイル内のフォーマット](https://github.com/htomine/johokaigi/blob/master/article_template.erb)
+[記事ファイル内のフォーマット](https://github.com/johokaigi/johokaigi/blob/master/article_template.erb)
 
 categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。
 
 # 次回イベント情報の更新
-https://github.com/htomine/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。
+https://github.com/johokaigi/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。

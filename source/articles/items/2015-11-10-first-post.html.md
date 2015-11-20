@@ -6,4 +6,4 @@ author: kony
 ---
 
 JohoKaigi - 情報会議 の情報を整理するページを作りました。  
-コードは [GitHub](https://github.com/htomine/johokaigi) で公開してありますので、Pull Requestお待ちしております！
+コードは [GitHub](https://github.com/johokaigi/johokaigi) で公開してありますので、Pull Requestお待ちしております！
