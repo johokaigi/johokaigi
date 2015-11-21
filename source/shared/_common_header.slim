@@ -4,11 +4,11 @@
       = image_tag '/assets/images/logo.svg', class: 'commonHeader_siteLogoImg',
                   title: 'JohoKaigi - 情報会議', alt: 'JohoKaigi - 情報会議'
 
-    nav.commonHeaderNavigation.hidden-xs
+    nav.commonHeaderNavigation
       ul.list-unstyled
         li.commonHeaderNavigation_list
           = link_to '/' do
             i.fa.fa-home
         li.commonHeaderNavigation_list = link_to '記事一覧', '/articles'
         li.commonHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
-        li.commonHeaderNavigation_list = link_to '情報発信ガイドライン', '/publishing-guideline'
+        li.commonHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'

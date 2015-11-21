@@ -13,9 +13,10 @@
     display: inline-block;
   }
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-sm-max) {
     text-align: center;
     vertical-align: middle;
+    height: auto;
 
     &_siteLogo {
       float: none;
