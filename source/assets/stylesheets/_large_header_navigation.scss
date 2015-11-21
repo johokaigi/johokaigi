@@ -1,5 +1,6 @@
 .largeHeaderNavigation {
   padding: 30px 0;
+  font-size: 1.1em;
 
   &_list {
     @include textlink(#fff);
