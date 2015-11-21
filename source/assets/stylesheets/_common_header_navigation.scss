@@ -1,6 +1,8 @@
 .commonHeaderNavigation {
   float: right;
 
+  ul { margin-bottom: 0; }
+
   &_list {
     @include textlink(#fff);
     display: inline-block;
@@ -9,6 +11,19 @@
       line-height: $header-height;
       padding: 0 10px;
       font-size: .95em;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    float: none;
+    text-align: center;
+
+    &_list {
+      padding-bottom: 10px;
+
+      a {
+        line-height: 1.4;
+      }
     }
   }
 }
