@@ -1,7 +1,7 @@
 JohoKaigi - 情報会議に関する情報をまとめているページです。
 
 # ステータス
-[![Build Status](https://travis-ci.org/htomine/johokaigi.svg?branch=master)](https://travis-ci.org/htomine/johokaigi)
+[![Build Status](https://travis-ci.org/johokaigi/johokaigi.svg?branch=master)](https://travis-ci.org/johokaigi/johokaigi)
 
 # 本番環境への反映
 masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチへデプロイしてくれます。
