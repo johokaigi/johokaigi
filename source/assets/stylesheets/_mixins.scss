@@ -35,3 +35,73 @@
     }
   }
 }
+
+@mixin markdown {
+  h2,
+  h3,
+  h4 {
+    line-height: 1.4;
+    font-weight: bold;
+    margin: {
+      top: 1.5em;
+      bottom: .8em;
+    }
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 1.7em;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $brand-color;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  blockquote {
+    font-size: 1em;
+    margin: 1em 0;
+    font-style: italic;
+
+    > *:first-child {
+      margin-top: 0;
+    }
+  }
+
+  table {
+    margin: 1em 0;
+
+    tr {
+      border: {
+        top: 1px solid #eee;
+        left: 1px solid #eee;
+      }
+    }
+
+    th,
+    td {
+      padding: 6px 10px;
+      border: {
+        right: 1px solid #eee;
+        bottom: 1px solid #eee;
+      }
+    }
+
+    th {
+      font-weight: bold;
+    }
+  }
+}
