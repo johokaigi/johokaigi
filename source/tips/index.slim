@@ -1,0 +1,14 @@
+---
+title: Tips
+description: 情報会議の運営で得たTipsを掲載しています。
+blog: tips
+---
+
+.container
+  .pageHeader
+    h1.pageHeader_title = current_page.data.title
+  ul.list-unstyled.articleList
+    - blog(blog_controller.name).articles.each do |article|
+      li
+        article.articleList_article
+          h1.articleList_title = link_to article.title, article
