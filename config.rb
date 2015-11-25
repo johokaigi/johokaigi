@@ -3,9 +3,11 @@ Time.zone = 'Tokyo'
 activate :directory_indexes
 
 activate :blog do |blog|
+  blog.name = 'articles'
+  blog.prefix = 'articles'
+
   blog.layout = 'article_layout'
   blog.permalink = '/{year}/{month}/{day}/{title}.html'
-  blog.prefix = 'articles'
   blog.sources = '/items/{year}-{month}-{day}-{title}.html'
   blog.new_article_template = 'article_template.erb'
   blog.default_extension = '.md'
@@ -16,6 +18,17 @@ activate :blog do |blog|
       template: '/articles/category.html'
     }
   }
+end
+
+activate :blog do |blog|
+  blog.name = 'tips'
+  blog.prefix = 'tips'
+
+  blog.layout = 'tips_layout'
+  blog.permalink = '/{title}.html'
+  blog.sources = '/items/{title}.html'
+  blog.new_article_template = 'tips_template.erb'
+  blog.default_extension = '.md'
 end
 
 page '/', layout: 'no_header_layout'

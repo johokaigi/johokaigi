@@ -3,6 +3,7 @@
     nav.largeHeaderNavigation
       ul.list-unstyled
         li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
+        li.largeHeaderNavigation_list = link_to 'Tips', '/tips'
         li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
         li.largeHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'
 
@@ -63,7 +64,7 @@ section.section
 section.section
   .container
     h2.section_title 新着記事
-    - blog.articles.each do |article|
+    - page_articles('articles').each do |article|
       article.information
         h1.information_title = link_to article.title, article.url
         time.information_time = article.date.strftime('%Y/%m/%d')
