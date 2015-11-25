@@ -22,5 +22,18 @@ masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチ
 
 categoryに `eventreport` を指定すると、http://johokaigi.org/articles/categories/eventreport.html に記事が表示されます。
 
+# Tipsの編集・追加
+Tipsは https://github.com/johokaigi/johokaigi/tree/master/source/tips/items に格納されています。  
+記事を編集する場合はGitHub上で編集できるのでその場で編集し、Pull Requestを作成してください。
+記事を追加する場合はこのディレクトリに新しいファイルを作成してください。
+
+## 記事追加時のフォーマットについて
+ファイル名は `TITLE.html.md` というフォーマットである必要があります。  
+例) `group-work-guide.md`
+
+また、ファイル内では以下のフォーマットに沿って記述する必要があります。  
+
+[記事ファイル内のフォーマット](https://github.com/johokaigi/johokaigi/blob/master/tips_template.erb)
+
 # 次回イベント情報の更新
 https://github.com/johokaigi/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。
