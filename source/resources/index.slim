@@ -15,8 +15,23 @@ description: 情報会議のロゴデータと、データを利用する際の�
         | ロゴの使用にあたっては、 [ダウンロード] セクションから最新のロゴをダウンロードして使用してください。
 
       h2 ダウンロード
-      p = link_to 'ロゴデータをダウンロード', 'https://drive.google.com/folderview?id=0BxFKGEqrIP1kQUdQMkdVanFocFk&usp=sharing', target: '_blank'
+      p
+        b = link_to 'ロゴデータをダウンロード', 'https://drive.google.com/folderview?id=0BxFKGEqrIP1kQUdQMkdVanFocFk&usp=sharing', target: '_blank'
 
+      p または以下をコピーしてご使用ください。
+      table
+        tr
+          td.text-center
+            = image_tag 'assets/images/resources/kanji_icon.png', width: '120px'
+          td.text-center
+            = image_tag 'assets/images/resources/logo_white_with_bg.png', width: '320px'
+        tr
+          td
+            pre
+              code.small = h('<a href="http://johokaigi.org"><img src="http://johokaigi.org/assets/images/resources/kanji_icon.png" width="120px"></a>')
+          td
+            pre
+              code.small = h('<a href="http://johokaigi.org"><img src="http://johokaigi.org/assets/images/resources/logo_white_with_bg.png" width="320px"></a>')
 
       h2 以下の目的での使用はぜひ :)
       ul
