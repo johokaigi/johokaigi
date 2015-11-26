@@ -40,4 +40,4 @@ https://github.com/johokaigi/johokaigi/blob/master/data/peatix.yml のHTMLを書
 
 # スタッフの更新
 スタッフ情報は https://github.com/johokaigi/johokaigi/blob/master/data/humans.yml に記述されています。YAMLなので更新時はインデントの数に注意してください。  
-新しくスタッフが増えた場合はsupportersに追記していく形になります。profile_image_urlは https://github.com/johokaigi/johokaigi/tree/master/source/assets/images/profile_images にアップロードした画像を参照するか、もしくは外部のリンクを記述してください。
+新しくスタッフが増えた場合はsupportersに追記していく形になります。profile_image_urlは https://github.com/johokaigi/johokaigi/tree/master/source/assets/images/profile_images にアップロードした画像を参照するか、もしくは外部に保存している画像のURLを記述してください。
