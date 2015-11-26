@@ -23,3 +23,15 @@ descriptipon: 情報会議のスタッフ一覧です。
           = image_tag supporter.profile_image_url, class: 'humansList_image'
           .humansList_name = supporter.name
           .humansList_url = link_to supporter.url, supporter.url, target: '_blank'
+
+    h2.humansList_title お問い合わせ
+    p = link_to 'フォームを開く', 'http://goo.gl/forms/8MsDcCYBLJ', target: '_blank'
+
+    hr
+
+    p.small
+      | Started by #{link_to 'Increments Inc.', 'http://increments.co.jp/', target: '_blank'}
+      br
+      | Original web site design by #{link_to 'kony', 'https://github.com/konycc', target: '_blank'} from Increments Inc.
+      br
+      | Hosted by #{link_to 'GitHub', 'https://github.com/johokaigi/johokaigi', target: '_blank'}
