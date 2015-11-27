@@ -37,6 +37,7 @@
 }
 
 @mixin markdown {
+  h1,
   h2,
   h3,
   h4 {
@@ -46,6 +47,12 @@
       top: 1.5em;
       bottom: .8em;
     }
+  }
+
+  h1 {
+    font-size: 2em;
+    border-bottom: 3px solid  $brand-color;
+    padding-bottom: 5px;
   }
 
   h2 {
