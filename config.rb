@@ -65,6 +65,11 @@ helpers do
     data.humans.supporters.each { |s| arr << s }
     arr
   end
+
+  def staff_readme
+    readme = Octokit.readme 'johokaigi/johokaigi_staff', accept: 'application/vnd.github.html'
+    readme.force_encoding('UTF-8')
+  end
 end
 
 set :css_dir, 'assets/stylesheets'

@@ -1,0 +1,8 @@
+.staffReadme {
+  @include card;
+  @include markdown;
+
+  *:first-child {
+    margin-top: 0;
+  }
+}

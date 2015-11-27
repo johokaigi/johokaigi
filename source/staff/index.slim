@@ -8,7 +8,8 @@ descriptipon: 情報会議のスタッフ一覧です。
     h1.pageHeader_title
       = current_page.data.title
   .humansList
-    h2.humansList_title オーガナイザー
+    h2.humansList_title スタッフ
+    h3.humansList_subTitle オーガナイザー
     ul.list-unstyled.list-inline
       - data.humans.organizers.each do |organizer|
         li.humansList_item
@@ -16,7 +17,7 @@ descriptipon: 情報会議のスタッフ一覧です。
           .humansList_name = organizer.name
           .humansList_url = link_to organizer.url, organizer.url, target: '_blank'
 
-    h2.humansList_title 協力
+    h3.humansList_subTitle 協力
     ul.list-unstyled.list-inline
       - data.humans.supporters.each do |supporter|
         li.humansList_item
@@ -26,6 +27,9 @@ descriptipon: 情報会議のスタッフ一覧です。
 
     h2.humansList_title お問い合わせ
     p = link_to 'フォームを開く', 'http://goo.gl/forms/8MsDcCYBLJ', target: '_blank'
+
+    h2.humansList_title スタッフの方へ
+    p = link_to 'README', '/staff/readme'
 
     hr
 
