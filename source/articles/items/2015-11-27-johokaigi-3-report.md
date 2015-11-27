@@ -4,6 +4,7 @@ description: "11/26 木曜日、3回目となる情報会議が開催されま�
 イベント当日の様子を紹介します。"
 date: 2015-11-27 12:00
 author: htomine
+og_image_url: https://qiita-image-store.s3.amazonaws.com/0/123/b65bd0f3-a3d6-36e0-9736-fdecb58d7714.jpeg
 category: eventreport
 ---
 
