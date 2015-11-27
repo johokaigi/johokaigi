@@ -7,11 +7,11 @@ author: htomine
 category: eventreport
 ---
 
-11/26 木曜日、3回目となる情報会議が開催されました。
-活動にもっとコミットしたいぞ！というメンバーでのサブミーティングも開かれ、徐々に温度感の高まってきた情報会議。
-イベント当日の様子を紹介します。
+11/26 木曜日、3回目となる情報会議が開催されました。  
+活動にもっとコミットしたいぞ！というメンバーでのサブミーティングも開かれ、徐々に温度感の高まってきた情報会議。  
+イベント当日の様子を紹介します。  
 
-ちなみに、イベント概要は [情報会議#3は明日開催です | JohoKaigi - 情報会議](http://johokaigi.org/articles/2015/11/25/johokaigi-3.html) を御覧ください。
+ちなみに、イベント概要は [情報会議#3は明日開催です JohoKaigi - 情報会議](http://johokaigi.org/articles/2015/11/25/johokaigi-3.html) を御覧ください。
 
 ## プログラム
 
@@ -47,12 +47,12 @@ category: eventreport
 
 ### LT
 
-全開までとちょっと趣向を変えまして、初手にLTを持ってきてみました。
+前回までとちょっと趣向を変えまして、初手にLTを持ってきてみました。  
 中盤のグループワークでもりあがったまま懇親会にいけるとたのしそうだなーという試み。どうだったかな？
 
 #### @so1_ 「価値観と感情を共有しよう」
 
-トップバッターは本イベントオーガナイザーの @so1_ にお願いしました。
+トップバッターは本イベントオーガナイザーの @so1_ にお願いしました。  
 情報共有の歴史から辿って現状を確認するところからはじまる、なかなか壮大なLTでしたね。
 
 ![IMG_1496.JPG](https://qiita-image-store.s3.amazonaws.com/0/123/04ca70e3-13b3-2e67-0734-be32017ab5ad.jpeg)
@@ -61,7 +61,7 @@ category: eventreport
 
 #### @masskaneko 「情報共有の私見の共有」
 
-2段目は @masskaneko ご自身の経験から紹介いただいた、情報共有の失敗と成功について。
+2段目は @masskaneko ご自身の経験から紹介いただいた、情報共有の失敗と成功について。  
 ツールのもつ文化的背景と、利用者のリテラシーを考慮にいれて導入を進めていく必要がある、という話はとても納得感ありました。
 
 ![CIMG5891.JPG](https://qiita-image-store.s3.amazonaws.com/0/123/6c2ed11b-ebca-12b3-72c6-56a56f1e8ba6.jpeg)
@@ -80,22 +80,23 @@ category: eventreport
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">( *´꒫`)もくもく <a href="https://twitter.com/hashtag/johokaigi?src=hash">#johokaigi</a> <a href="https://t.co/s4HJ7BE9RK">pic.twitter.com/s4HJ7BE9RK</a></p>&mdash; JohoKaigi 情報会議 (@JohoKaigi) <a href="https://twitter.com/JohoKaigi/status/669839994924601344">November 26, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-今回は4グループでちょっとこじんまりでしたが、
-前回から試している「2グループで顔つき合わせて発表する」スタイルはやっぱり盛り上がりやすくてよかったです！
-終わったとの雑談の時間も、自由な議論や突っ込みを生んでいてよかったですね。
+今回は4グループでちょっとこじんまりでしたが、  
+前回から試している「2グループで顔つき合わせて発表する」スタイルはやっぱり盛り上がりやすくてよかったです！  
+終わったあとの雑談の時間も、自由な議論や突っ込みを生んでいてよかったんじゃないかなーと。
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">( *´꒫`)発表中&#10;<a href="https://twitter.com/hashtag/johokaigi?src=hash">#johokaigi</a> <a href="https://t.co/kQLLI61lDb">pic.twitter.com/kQLLI61lDb</a></p>&mdash; JohoKaigi 情報会議 (@JohoKaigi) <a href="https://twitter.com/JohoKaigi/status/669847140894568448">November 26, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 情報会議の運営会議
 
-今回4グループと前回より少なめになっていたのは、
-1回目2回目の参加者から、**イベントやコミュニティ運営を手伝いたい！**というメンバーでの運営会議？が開催されていたからでした。
+今回4グループと前回より少なめになっていたのは、  
+1回目2回目の参加者から、**イベントやコミュニティ運営を手伝いたい！**というメンバーでの運営会議？がとなりで開かれていたからでした。
 
 ![CIMG5922.JPG](https://qiita-image-store.s3.amazonaws.com/0/123/c9b69eca-d1f3-7607-ea80-07c4853831fb.jpeg)
 
-議論した内容は下記のレポジトリで公開されています！
-「手伝ってもいいよ！」と思った方は見てみてくださいね :)
+議論した内容は下記のレポジトリで公開されています！  
+こんな風に徐々に活動をオープンにしていけたらなと考えています。  
+「手伝ってもいいよ！」「どんなことやるのか気になる」と思った方、ぜひ見てみてくださいね :)
 
 [johokaigi/johokaigi_staff](https://github.com/johokaigi/johokaigi_staff)
 
