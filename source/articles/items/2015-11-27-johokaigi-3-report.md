@@ -14,6 +14,8 @@ category: eventreport
 
 ちなみに、イベント概要は [情報会議#3は明日開催です JohoKaigi - 情報会議](http://johokaigi.org/articles/2015/11/25/johokaigi-3.html) を御覧ください。
 
+<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">情報会議 #3 レポート記事をアップしました。どんなイベントか気になってる方はぜひチェックしてみてください(*&#39;-&#39;)ﾉ~&#10;運営スタッフが増えたのが大きなトピック！&#10;<a href="https://t.co/bK8v0HU2je">https://t.co/bK8v0HU2je</a></p>&mdash; JohoKaigi 情報会議 (@JohoKaigi) <a href="https://twitter.com/JohoKaigi/status/670103435971330048">2015, 11月 27</a></blockquote>
+
 ## プログラム
 
 |時間|内容|
@@ -130,5 +132,3 @@ category: eventreport
 [JohoKaigi 情報会議に参加したい](https://docs.google.com/forms/d/1cVmHNgyveMsgkaD-GHky_wXEOypHC1AUEr7AwzoDGGk/viewform)
 
 次のレポートもお楽しみに！
-
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">情報会議 #3 レポート記事をアップしました。どんなイベントか気になってる方はぜひチェックしてみてください(*&#39;-&#39;)ﾉ~&#10;運営スタッフが増えたのが大きなトピック！&#10;<a href="https://t.co/bK8v0HU2je">https://t.co/bK8v0HU2je</a></p>&mdash; JohoKaigi 情報会議 (@JohoKaigi) <a href="https://twitter.com/JohoKaigi/status/670103435971330048">2015, 11月 27</a></blockquote>
