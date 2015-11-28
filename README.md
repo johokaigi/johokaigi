@@ -4,7 +4,7 @@ JohoKaigi - 情報会議に関する情報をまとめているページです�
 http://johokaigi.org/
 
 ## 本番環境への反映
-masterブランチへpushすると、TravisCIが自動的にgh-pagesブランチへデプロイしてくれます。
+masterブランチに変更があると、TravisCIが自動的にgh-pagesブランチへデプロイしてくれます。
 
 ## 記事の更新
 記事は https://github.com/johokaigi/johokaigi/tree/master/source/articles/items に格納されています。  
