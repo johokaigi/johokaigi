@@ -1,6 +1,6 @@
 ---
-title: スタッフ一覧
-descriptipon: 情報会議のスタッフ一覧です。
+title: 運営
+descriptipon: 情報会議の運営スタッフ一覧と運営へのお問い合わせについて掲載しています。
 ---
 
 .container
@@ -8,25 +8,20 @@ descriptipon: 情報会議のスタッフ一覧です。
     h1.pageHeader_title
       = current_page.data.title
   .humansList
-    h2.humansList_title スタッフ
+    h2.humansList_title スタッフ一覧
     h3.humansList_subTitle オーガナイザー
     ul.list-unstyled.list-inline
       - data.humans.organizers.each do |organizer|
-        li.humansList_item
-          = image_tag organizer.profile_image_url, class: 'humansList_image'
-          .humansList_name = organizer.name
-          .humansList_url = link_to organizer.url, organizer.url, target: '_blank'
+        = partial 'staff/human_card', locals: { human: organizer }
 
-    h3.humansList_subTitle 協力
+    h3.humansList_subTitle スタッフ
     ul.list-unstyled.list-inline
-      - data.humans.supporters.each do |supporter|
-        li.humansList_item
-          = image_tag supporter.profile_image_url, class: 'humansList_image'
-          .humansList_name = supporter.name
-          .humansList_url = link_to supporter.url, supporter.url, target: '_blank'
+      - data.humans.staff.each do |staff|
+        = partial 'staff/human_card', locals: { human: staff }
 
     h2.humansList_title お問い合わせ
-    p = link_to 'フォームを開く', 'http://goo.gl/forms/8MsDcCYBLJ', target: '_blank'
+    p
+      strong = link_to 'フォームを開く', 'http://goo.gl/forms/8MsDcCYBLJ', target: '_blank'
 
     h2.humansList_title スタッフの方へ
     p = link_to 'README', '/staff/readme'

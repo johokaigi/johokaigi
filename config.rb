@@ -62,7 +62,7 @@ helpers do
   def members
     arr = []
     data.humans.organizers.each { |o| arr << o }
-    data.humans.supporters.each { |s| arr << s }
+    data.humans.staff.each { |s| arr << s }
     arr
   end
 

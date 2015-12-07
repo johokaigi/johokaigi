@@ -1,18 +1,45 @@
 organizers:
   - name: htomine
-    url: https://twitter.com/htomine
+    twitter: https://twitter.com/htomine
+    github: https://github.com/htomine
+    facebook: https://facebook.com/htomine
+    link: http://htomine.hateblo.jp/
     profile_image_url: /assets/images/profile_images/htomine.png
   - name: so1_
-    url: https://twitter.com/so1_
+    twitter: https://twitter.com/so1_
     profile_image_url: /assets/images/profile_images/so1_.jpg
 
-supporters:
+staff:
   - name: mico-mico
-    url: https://twitter.com/mico_mico
+    twitter: https://twitter.com/mico_mico
     profile_image_url: /assets/images/profile_images/mico-mico.jpg
   - name: kanapon_i
-    url: https://twitter.com/kanapon_i
+    twitter: https://twitter.com/kanapon_i
     profile_image_url: /assets/images/profile_images/kanapon_i.png
   - name: kony
-    url: https://github.com/konycc
+    github: https://github.com/konycc
     profile_image_url: /assets/images/profile_images/kony.png
+  - name: tokifujp
+    twitter: https://twitter.com/tokifujp
+    profile_image_url: /assets/images/profile_images/tokifujp.png
+  - name: tseigo
+    twitter: https://twitter.com/1ft_seabass
+    profile_image_url: /assets/images/profile_images/tseigo.png
+  - name: fakestarbaby
+    twitter: https://twitter.com/fakestarbaby
+    profile_image_url: /assets/images/profile_images/fakestarbaby.png
+  - name: mizoguche
+    twitter: https://twitter.com/mizoguche
+    profile_image_url: /assets/images/profile_images/mizoguche.jpg
+  - name: fortkle
+    twitter: https://twitter.com/fortkle
+    profile_image_url: /assets/images/profile_images/fortkle.png
+  - name: HKDnet
+    twitter: https://twitter.com/HKDnet
+    profile_image_url: /assets/images/profile_images/HKDnet.jpg
+  - name: Implem
+    twitter: https://twitter.com/uchi_ta
+    profile_image_url: /assets/images/profile_images/Implem.png
+  - name: takoba
+    twitter: https://twitter.com/takoba_
+    profile_image_url: /assets/images/profile_images/takoba.jpg
