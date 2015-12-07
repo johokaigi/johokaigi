@@ -1,0 +1,12 @@
+li.humanCard
+  .humanCard_left
+    = image_tag human.profile_image_url, class: 'humanCard_image'
+  .humanCard_right
+    .humanCard_name = human.name
+    .humanCard_socialLinks
+      - if human.twitter
+        = link_to human.twitter, target: '_blank' do
+          i.fa.fa-twitter-square
+      - if human.github
+        = link_to human.github, target: '_blank' do
+          i.fa.fa-github-square
