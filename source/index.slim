@@ -86,9 +86,8 @@ section.section
     ul.list-unstyled.list-inline.organizers
       - data.humans.organizers.each do |human|
         li.organizers_list
-          = link_to human.url do
-            = image_tag human.profile_image_url, class: 'organizers_icon'
-            .organizers_name = human.name
+          = image_tag human.profile_image_url, class: 'organizers_icon'
+          .organizers_name = human.name
 
     p.text-center
       = link_to 'スタッフ一覧', '/staff'
