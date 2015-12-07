@@ -7,6 +7,10 @@
     bottom: 10px;
   }
 
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
   &_left {
     float: left;
   }
@@ -21,6 +25,10 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 10px;
+
+    @media (max-width: $screen-xs-max) {
+      @include square(44px);
+    }
   }
 
   &_name {
