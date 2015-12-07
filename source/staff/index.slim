@@ -12,12 +12,12 @@ descriptipon: 情報会議の運営スタッフ一覧と運営へのお問い合
     h3.humansList_subTitle オーガナイザー
     ul.list-unstyled.list-inline
       - data.humans.organizers.each do |organizer|
-        = partial 'staff/staff_card', locals: { human: organizer }
+        = partial 'staff/human_card', locals: { human: organizer }
 
     h3.humansList_subTitle スタッフ
     ul.list-unstyled.list-inline
       - data.humans.staff.each do |staff|
-        = partial 'staff/staff_card', locals: { human: staff }
+        = partial 'staff/human_card', locals: { human: staff }
 
     h2.humansList_title お問い合わせ
     p

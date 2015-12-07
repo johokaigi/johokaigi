@@ -16,7 +16,7 @@
   }
 
   &_image {
-    @include square(44px);
+    @include square(48px);
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
@@ -24,12 +24,17 @@
   }
 
   &_name {
-    font-size: 1em;
-    line-height: 1.2;
+    font-size: 1.1em;
+    line-height: 1;
   }
 
   &_socialLinks {
+    font-size: 1.2em;
     line-height: 1;
     margin-top: 5px;
+
+    i {
+      margin-right: 5px;
+    }
   }
 }
