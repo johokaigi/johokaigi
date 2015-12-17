@@ -84,7 +84,7 @@ section.section
   .container
     h2.section_title オーガナイザー
     ul.list-unstyled.list-inline.organizers
-      - data.humans.organizers.each do |human|
+      - data.staff.organizers.each do |human|
         li.organizers_list
           = image_tag human.profile_image_url, class: 'organizers_icon'
           .organizers_name = human.name
