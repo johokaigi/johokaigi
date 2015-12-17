@@ -39,5 +39,5 @@ Tipsは https://github.com/johokaigi/johokaigi/tree/master/source/tips/items に
 https://github.com/johokaigi/johokaigi/blob/master/data/peatix.yml のHTMLを書き換えてください。
 
 ## スタッフの更新
-スタッフ情報は https://github.com/johokaigi/johokaigi/blob/master/data/humans.yml に記述されています。YAMLなので更新時はインデントの数に注意してください。  
-新しくスタッフが増えた場合はstaffに追記していく形になります。profile_image_urlは https://github.com/johokaigi/johokaigi/tree/master/source/assets/images/profile_images にアップロードした画像を参照するか、もしくは外部に保存している画像のURLを記述してください。
+スタッフ情報は https://github.com/johokaigi/johokaigi/blob/master/data/staff.yml に記述されています。YAMLなので更新時はインデントの数に注意してください。  
+新しくスタッフが増えた場合はcollaboratorsに追記していく形になります。profile_image_urlは https://github.com/johokaigi/johokaigi/tree/master/source/assets/images/profile_images にアップロードした画像を参照するか、もしくは外部に保存している画像のURLを記述してください。
