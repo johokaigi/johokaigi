@@ -76,7 +76,7 @@ category: eventreport
 
 ![image](https://qiita-image-store.s3.amazonaws.com/0/123/6c0b8634-4e7f-0d81-2b71-71b497d0af39.png)
 
-![image](https://night.qiita.com/files/e4993692-d11a-9a01-d15d-101aa616b6ef.png)  
+![image](https://qiita-image-store.s3.amazonaws.com/0/123/62b05ac9-d0a5-2601-429d-c75fbfe34b80.png)  
 *チームに分かれてもくもくする様子*
 
 それぞれの成果は Qiita:Team へ。
@@ -114,7 +114,7 @@ category: eventreport
 
 ![image](https://qiita-image-store.s3.amazonaws.com/0/123/f8b3a378-a864-b043-5c2d-7992720f05aa.png)
 
-![image](https://night.qiita.com/files/75caa7f4-b03f-d708-4b45-1a3e3b8316ec.png)
+![image](https://qiita-image-store.s3.amazonaws.com/0/123/281c76be-a2f1-87b6-2858-c3521202dc97.png)
 
 ワイワイしつつ情報共有について盛り上がりました。
 
