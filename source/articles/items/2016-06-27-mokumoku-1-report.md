@@ -36,14 +36,14 @@ category: eventreport
 \#1では、v2として再始動にあたっての目的について説明＆質疑応答し、v2を通して「体系的な知識にする」ためにはどんな活動ができそうか？をブレストしました。
 「もくもく会」というアイデアも、この場で生まれたものです。
 
-![image](https://qiita-image-store.s3.amazonaws.com/0/123/630d96c5-3c35-d2e7-7d37-160ca578179f.png)
+![image](https://qiita-image-store.s3.amazonaws.com/0/123/630d96c5-3c35-d2e7-7d37-160ca578179f.png)  
 *2班に分かれてアイデアを出しあいました。*
 
 久々の活動でしたが沢山意見も出て、次回からの活動のきっかけが作れた回でした。
 そしてブレストした後は**「美登利寿司」**のお寿司を食べながらわいわいと。
 それぞれのチームで抱えている最近の悩みなどについて盛り上がりました。
 
-![image](https://qiita-image-store.s3.amazonaws.com/0/123/1d497f60-de66-05af-e95f-303d5c5bb2ba.png)
+![image](https://qiita-image-store.s3.amazonaws.com/0/123/1d497f60-de66-05af-e95f-303d5c5bb2ba.png)  
 *穴子がね。*
 
 ### \#2 今半のすき焼きの回 & 初もくもくの回
@@ -86,7 +86,7 @@ category: eventreport
 そして圧巻の**今半**です。  
 後半はすき焼きしながらの「悩み相談タイム」としていたんですが、逆に「こんな出来事が合って、今チームがいい方向に動き出している…！」というアツいお話を聞かせてもらいました！他のチームのこういった話が聞けるのも、情報会議の良いところかなと思います。
 
-![image](https://qiita-image-store.s3.amazonaws.com/0/123/1a452053-203e-e28d-968e-dc86dace47e5.png)
+![image](https://qiita-image-store.s3.amazonaws.com/0/123/1a452053-203e-e28d-968e-dc86dace47e5.png)  
 *肉寿司、ちょっとどういうことなの…？*
 
 また、この回では、昨年行っていたようなオープンなイベント形式の情報会議開催についても少し話し合いました。
