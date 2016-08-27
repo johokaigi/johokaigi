@@ -3,10 +3,12 @@ rvm: 2.2.3
 script: bundle exec middleman build
 env:
   global:
-    - GIT_COMMITTER_NAME='htomine@travis-ci'
-    - GIT_COMMITTER_EMAIL='htomine@qiita.com'
-    - GIT_AUTHOR_NAME='htomine@travis-ci'
-    - GIT_AUTHOR_EMAIL='htomine@qiita.com'
-    - secure: TcscSyrhTKPRCzq/KlhIDCZWA3iz+9pIh7KvX0pROoCuZKQO+/cH4q+FhvMqfIGOAbnWi39SJmEekM64ugutja87nRk/lYTrPL/gMTkId+UUrDOZF6iUckH0FRyU/M0tiM51xpRxwsdjMke+m5cPgpZq9Q3vYuZDX/E4j46F75bwb+R1h9AGLmOTHfQB41uNm20jo10jhNAA4dywLM6Zjzz+zgqe7dYCBDk+OVcYYo/1e1wSGekoF2eslzRhVTs/muTcRtvldVcXqtu45ZPmk5HusVvKNHaq1znqIYs+H8tR+US/zP6qNQy06FzCeoAKvedXLcUhCM0mqUEQ9r9Qsvgx7fif1sHAVAe0BmYm9N1Q6kwrGz/jIeqSIKItyF7YfPPyBdzOjsJlvJP4mZTapyGVuqRnkynX2v9F8yazfphvfI/YIn2/qMUPmrOIQcHStmYD2I8rUOxkOkmGZ8VhdmLcS0LsQycnclUSAzKbQMqfeU6quEblxIVkgyeG5AEi9sjnoP6Vj/n0e0PqTEl/DUo5Ip7QxaKWZDR2ClVGQzGJc+5tffA1UwJ3Wilxa2fQ/CYkFYc4g91Iqg7skGfdr01fCPrhE34RBTbNIE5cmsBoRTz85F8c7qiGbb3zjjSyec3kJF4itdhMJHdGiYtM0IaLjAPXBFWt1gWM3dRqWlQ=
+  - GIT_COMMITTER_NAME='htomine@travis-ci'
+  - GIT_COMMITTER_EMAIL='htomine@qiita.com'
+  - GIT_AUTHOR_NAME='htomine@travis-ci'
+  - GIT_AUTHOR_EMAIL='htomine@qiita.com'
+  - secure: TcscSyrhTKPRCzq/KlhIDCZWA3iz+9pIh7KvX0pROoCuZKQO+/cH4q+FhvMqfIGOAbnWi39SJmEekM64ugutja87nRk/lYTrPL/gMTkId+UUrDOZF6iUckH0FRyU/M0tiM51xpRxwsdjMke+m5cPgpZq9Q3vYuZDX/E4j46F75bwb+R1h9AGLmOTHfQB41uNm20jo10jhNAA4dywLM6Zjzz+zgqe7dYCBDk+OVcYYo/1e1wSGekoF2eslzRhVTs/muTcRtvldVcXqtu45ZPmk5HusVvKNHaq1znqIYs+H8tR+US/zP6qNQy06FzCeoAKvedXLcUhCM0mqUEQ9r9Qsvgx7fif1sHAVAe0BmYm9N1Q6kwrGz/jIeqSIKItyF7YfPPyBdzOjsJlvJP4mZTapyGVuqRnkynX2v9F8yazfphvfI/YIn2/qMUPmrOIQcHStmYD2I8rUOxkOkmGZ8VhdmLcS0LsQycnclUSAzKbQMqfeU6quEblxIVkgyeG5AEi9sjnoP6Vj/n0e0PqTEl/DUo5Ip7QxaKWZDR2ClVGQzGJc+5tffA1UwJ3Wilxa2fQ/CYkFYc4g91Iqg7skGfdr01fCPrhE34RBTbNIE5cmsBoRTz85F8c7qiGbb3zjjSyec3kJF4itdhMJHdGiYtM0IaLjAPXBFWt1gWM3dRqWlQ=
+  - secure: w/N3jkFhJC+AT/dd2bEhZPGt8nyVrFCt4ZZPBcIjQPCLQAbcVqSrRI0Ua92RIhcIZ/JWn1EpsjE2Hesh2QF62hDNjhk1uNfzvkYQdKccSfrzE+A9s1qfcAA+0fKbTKWFGzaurhY92Yd0mBBR/vfNVsSFvhffx6JCkYtxCqMnjSyq6fAi024Y5z8bX/WwKTGXtNfCwwaN7yeGk5yAKuIz1wk/ibo5MCHTjBiHHaqcAyEORDvEUxK2JJX4nTASbWht6K1XxBaCW5Rl+Imwo5h3WEX0gWEdQu89jmEzOx6Dz1W2VSumBvntN9/mPfO8wSusAmRkY4fsJsR6+wb+pilalmaadgM1mcr9nrvvaQCh6bK0jJnc7KofmW5XkL65W0YUHKHJTAmbAJNNv4gDcJsO0qjl49yik/4oVYVRLFzoM8MK1lfjnEjnYTwBirTIzlAOKiAQ9N+c06IVHctxYsr2Yj5gNA6SZfffjg5EHanYJI6ExiLqaX1H/ekWHAF9KayM12N6Zb8Qv8upWUMRCVzBA/hQ+SOf/OUPawTdDyd7KDuS//GPLY4Cmtk2HvcCxiZcKWrh7Q4LaRneBsTbYuoe2x579jOQ6cDsMA15NBL6EQSe52YCz7NCXv3aRQ570VcMtYGg52YLJSQH6DEIrWXkGw+RzRh/knEnSYZqeziDiGg=
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy
+  >/dev/null 2>&1'
