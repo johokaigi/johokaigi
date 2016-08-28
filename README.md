@@ -1,7 +1,4 @@
-# Johokaigi - 情報会議 [![Build Status](https://travis-ci.org/johokaigi/johokaigi.svg?branch=master)](https://travis-ci.org/johokaigi/johokaigi)
-
-JohoKaigi - 情報会議に関する情報をまとめているページです。  
-http://johokaigi.org/
+## Japan pmconf 2016
 
 ## 本番環境への反映
 masterブランチに変更があると、TravisCIが自動的にgh-pagesブランチへデプロイしてくれます。
