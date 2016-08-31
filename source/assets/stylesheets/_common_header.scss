@@ -4,14 +4,20 @@
 
   &_siteLogo {
     display: inline-block;
-    padding: 12px 0;
+    padding: 9px 0;
     float: left;
+    color: #fff;
+    margin: 0;
+    font: {
+      size: 1.2em;
+      family: $font-family-cursive;
+    }
   }
 
-  &_siteLogoImg {
-    max-height: $header-height - 12px * 2;
-    display: inline-block;
-  }
+//  &_siteLogoImg {
+//    max-height: $header-height - 12px * 2;
+//    display: inline-block;
+//  }
 
   @media (max-width: $screen-sm-max) {
     text-align: center;

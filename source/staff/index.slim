@@ -9,23 +9,23 @@ descriptipon: 運営スタッフ一覧と運営へのお問い合わせについ
       = current_page.data.title
   .staffList
     h2.staffList_title スタッフ一覧
-    h3.staffList_subTitle オーガナイザー
+    h3.staffList_subTitle 主催
     ul.list-unstyled.list-inline
       - data.staff.organizers.each do |organizer|
         = partial 'staff/human_card', locals: { human: organizer }
 
-    h3.staffList_subTitle コラボレーター
+    h3.staffList_subTitle スタッフ
     ul.list-unstyled.list-inline
       - data.staff.collaborators.each do |staff|
         = partial 'staff/human_card', locals: { human: staff }
 
-    h2.staffList_title お問い合わせ
-    p
-      strong = link_to 'フォームを開く', '', target: '_blank'
+    / h2.staffList_title お問い合わせ
+    / p
+    /   strong = link_to 'フォームを開く', '', target: '_blank'
 
-    h2.staffList_title スタッフの方へ
-    p = link_to 'README', '/staff/readme'
-
+    / h2.staffList_title スタッフの方へ
+    / p = link_to 'README', '/staff/readme'
+    / 
     hr
 
     p.small
