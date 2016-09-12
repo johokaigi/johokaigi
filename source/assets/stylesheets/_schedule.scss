@@ -1,0 +1,30 @@
+.schedule {
+  @include card;
+
+  &_title {
+    display: inline-block;
+    margin: 30px 0 20px;
+    border-bottom: 3px solid $brand-color;
+    padding-bottom: 5px;
+    font: {
+      size: 1.8em;
+      weight: normal;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &_subTitle {
+    margin: 40px 0 20px;
+    font: {
+      size: 1.5em;
+      weight: normal;
+    }
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+}
