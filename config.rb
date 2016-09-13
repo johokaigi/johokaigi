@@ -66,6 +66,15 @@ helpers do
     arr
   end
 
+  def sponsors
+    arr = []
+    data.sponsors.platinas.each { |sp| arr << sp }
+    data.sponsors.golds.each { |sg| arr << sg }
+    data.sponsors.sivers.each { |ss| arr << ss }
+    data.sponsors.drinks.each { |sd| arr << sd }
+    arr
+  end
+
   # def staff_readme
   #   readme = Octokit.readme 'htomine/pmconf_staff',
   #            accept: 'application/vnd.github.html'

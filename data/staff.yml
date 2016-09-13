@@ -1,28 +1,23 @@
 organizers:
-  - name: fullvirtue
-    twitter: https://twitter.com/fullvirtue
-    link: http://fullvirtue.com/
-    profile_image_url: /assets/images/profile_images/fullvirtue.png
-
-collaborators:
-  - name: ykmc09
-    github: https://github.com/ykmc09
-    profile_image_url: /assets/images/profile_images/ykmc09.jpeg
   - name: stylishidea
     github: https://github.com/stylishidea
     profile_image_url: /assets/images/profile_images/stylishidea.png
-  - name: aomegane
-    github: https://github.com/aomegane
-    profile_image_url: /assets/images/profile_images/aomegane.jpeg
-  - name: b-marsa
-    github: https://github.com/b-marsa
-    profile_image_url: /assets/images/profile_images/b-marsa.png
   - name: TakuoIMBE
     github: https://github.com/im6e
     profile_image_url: /assets/images/profile_images/TakuoIMBE.png
   - name: takoratta
     github: https://github.com/takoratta
     profile_image_url: /assets/images/profile_images/takoratta.jpeg
+  - name: aomegane
+    github: https://github.com/aomegane
+    profile_image_url: /assets/images/profile_images/aomegane.jpeg
+  - name: fullvirtue
+    twitter: https://twitter.com/fullvirtue
+    link: http://fullvirtue.com/
+    profile_image_url: /assets/images/profile_images/fullvirtue.png
+  - name: b-marsa
+    github: https://github.com/b-marsa
+    profile_image_url: /assets/images/profile_images/b-marsa.png
   - name: mizukitanno
     github: https://github.com/mizukitanno
     profile_image_url: /assets/images/profile_images/mizukitanno.png
@@ -32,3 +27,8 @@ collaborators:
     facebook: https://facebook.com/htomine
     link: http://htomine.hateblo.jp/
     profile_image_url: /assets/images/profile_images/htomine.png
+  - name: ykmc09
+    github: https://github.com/ykmc09
+    profile_image_url: /assets/images/profile_images/ykmc09.jpeg
+
+collaborators:

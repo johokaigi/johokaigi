@@ -1,0 +1,38 @@
+.sponsors {
+
+  &_list {
+    display: flex;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-right: 2em;
+      padding: 10px;
+      background-color: #fff;
+      text-align: center;
+      border: 1px solid #eee;
+
+      img {
+        width: 100%;
+      }
+
+      &-golds{
+        @extend .sponsors_list_item;
+        width: 200px;
+        height: 200px;
+      }
+
+      &-silvers {
+        @extend .sponsors_list_item;
+        width: 160px;
+        height: 160px;
+      }
+
+      &-drinks {
+        @extend .sponsors_list_item;
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
