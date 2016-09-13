@@ -1,22 +1,35 @@
 .largeHeader
   .containers
     nav.largeHeaderNavigation
+      p.largeHeader_siteCaption
+        | さぁはじめよう！日本のプロダクトマネジメント
+      h1.largeHeader_siteLogo
+        | Japan Product Manager
+        br
+        | Conference 2016
+      h2.largeHeader_date
+        | 10/24 - 10/25
       ul.list-unstyled
         / li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
         / li.largeHeaderNavigation_list = link_to 'Tips', '/tips'
         / li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
         / li.largeHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'
-        li.largeHeaderNavigation_list = link_to 'スケジュール', '/schedule'
-        li.largeHeaderNavigation_list = link_to '運営', '/staff'
-      p.largeHeader_siteCaption
-        | ～さぁはじめよう！日本のプロダクトマネジメント～
-      h1.largeHeader_siteLogo
-        | Japan Product Manager
-        br
-        | Conference 2016
-      .largeHeader_subline
-        strong
-          | 9/16(金)　申込開始！
+        li.largeHeaderNavigation_list
+          = link_to '/schedule' do
+            i.fa.fa-calendar
+            | &nbsp;
+            | スケジュール
+        li.largeHeaderNavigation_list
+          = link_to '/staff' do
+            i.fa.fa-users
+            | &nbsp;
+            | 運営
+      .largeHeader_signup
+        h2.largeHeader_commingsoon
+          | Comming Soon!
+        .largeHeader_subline
+          strong
+            | 9/16(金)　申込開始！
 
 section.section
   .container
