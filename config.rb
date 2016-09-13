@@ -41,7 +41,7 @@ helpers do
     elsif yield_content(:title)
       "#{yield_content(:title)} | Japan Product Manager Conference 2016"
     else
-      'pmconf'
+      'Japan Product Manager Conference 2016 | 2016/10/24~10/25'
     end
   end
 
