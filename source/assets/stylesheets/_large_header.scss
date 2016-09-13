@@ -7,6 +7,10 @@
 
   &_siteCaption {
     margin-top: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: .7em;
+    }
   }
 
   &_siteLogo {
@@ -19,6 +23,10 @@
     font-size: 4.2em;
     font-family: $font-family-cursive;
     transform: rotate(-6deg);
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 2em;
+    }
   }
 
   &_date {
