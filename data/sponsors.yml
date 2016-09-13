@@ -1,0 +1,25 @@
+platina:
+golds:
+  - name: 株式会社サイバーエージェント
+    url: https://www.cyberagent.co.jp/corporate/data/
+    logo_image_url: /assets/images/sponsors/cyberagent.png
+  - name: Increments株式会社
+    url: http://increments.co.jp/company
+    logo_image_url: /assets/images/sponsors/increments.png
+  - name: 株式会社メルカリ
+    url: https://www.mercari.com/jp/about/corporate/
+    logo_image_url: /assets/images/sponsors/mercari.png
+silvers:
+drinks:
+  - name: 株式会社ビズリーチ
+    url: http://www.bizreach.co.jp/corporate_info/profile/
+    logo_image_url: /assets/images/sponsors/bizreach.png
+  - name: freee株式会社
+    url: https://www.freee.co.jp/
+    logo_image_url: /assets/images/sponsors/freee.png
+  - name: 株式会社メルカリ
+    url: https://www.mercari.com/jp/about/corporate/
+    logo_image_url: /assets/images/sponsors/mercari.png
+  - name: スマートニュース株式会社
+    url: http://about.smartnews.com/ja/about/
+    logo_image_url: /assets/images/sponsors/smartnews.png

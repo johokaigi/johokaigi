@@ -1,45 +1,34 @@
 organizers:
+  - name: stylishidea
+    github: https://github.com/stylishidea
+    profile_image_url: /assets/images/profile_images/stylishidea.png
+  - name: TakuoIMBE
+    github: https://github.com/im6e
+    profile_image_url: /assets/images/profile_images/TakuoIMBE.png
+  - name: takoratta
+    github: https://github.com/takoratta
+    profile_image_url: /assets/images/profile_images/takoratta.jpeg
+  - name: aomegane
+    github: https://github.com/aomegane
+    profile_image_url: /assets/images/profile_images/aomegane.jpeg
+  - name: fullvirtue
+    twitter: https://twitter.com/fullvirtue
+    link: http://fullvirtue.com/
+    profile_image_url: /assets/images/profile_images/fullvirtue.png
+  - name: b-marsa
+    github: https://github.com/b-marsa
+    profile_image_url: /assets/images/profile_images/b-marsa.png
+  - name: mizukitanno
+    github: https://github.com/mizukitanno
+    profile_image_url: /assets/images/profile_images/mizukitanno.png
   - name: htomine
     twitter: https://twitter.com/htomine
     github: https://github.com/htomine
     facebook: https://facebook.com/htomine
     link: http://htomine.hateblo.jp/
     profile_image_url: /assets/images/profile_images/htomine.png
-  - name: so1_
-    twitter: https://twitter.com/so1_
-    profile_image_url: /assets/images/profile_images/so1_.jpg
+  - name: ykmc09
+    github: https://github.com/ykmc09
+    profile_image_url: /assets/images/profile_images/ykmc09.jpeg
 
 collaborators:
-  - name: mico-mico
-    twitter: https://twitter.com/mico_mico
-    profile_image_url: /assets/images/profile_images/mico-mico.jpg
-  - name: kanapon_i
-    twitter: https://twitter.com/kanapon_i
-    profile_image_url: /assets/images/profile_images/kanapon_i.png
-  - name: kony
-    github: https://github.com/konycc
-    profile_image_url: /assets/images/profile_images/kony.png
-  - name: tokifujp
-    twitter: https://twitter.com/tokifujp
-    profile_image_url: /assets/images/profile_images/tokifujp.png
-  - name: tseigo
-    twitter: https://twitter.com/1ft_seabass
-    profile_image_url: /assets/images/profile_images/tseigo.png
-  - name: fakestarbaby
-    twitter: https://twitter.com/fakestarbaby
-    profile_image_url: /assets/images/profile_images/fakestarbaby.png
-  - name: mizoguche
-    twitter: https://twitter.com/mizoguche
-    profile_image_url: /assets/images/profile_images/mizoguche.jpg
-  - name: fortkle
-    twitter: https://twitter.com/fortkle
-    profile_image_url: /assets/images/profile_images/fortkle.png
-  - name: HKDnet
-    twitter: https://twitter.com/HKDnet
-    profile_image_url: /assets/images/profile_images/HKDnet.jpg
-  - name: Implem
-    twitter: https://twitter.com/uchi_ta
-    profile_image_url: /assets/images/profile_images/Implem.png
-  - name: takoba
-    twitter: https://twitter.com/takoba_
-    profile_image_url: /assets/images/profile_images/takoba.jpg

@@ -2,7 +2,7 @@
   padding: 80px 0;
   border-bottom: 1px solid #ddd;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: #fff;
   }
 
@@ -19,8 +19,21 @@
     }
   }
 
-  &_waitingList {
-      text-align: center;
+  &_body {
+    text-align: center;
+  }
+
+  &_eventNote {
+    text-align: left;
+    dd {
+      margin-bottom: 10px;
+      .date {
+        display: block;
+        font: {
+          size: 2em;
+        }
+      }
+    }
   }
 
   h3 {

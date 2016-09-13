@@ -1,0 +1,367 @@
+---
+title: スケジュール
+descriptipon: カンファレンスのスケジュールについて紹介します。
+---
+
+.container
+  .pageHeader
+    h1.pageHeader_title
+      = current_page.data.title
+  .schedule
+    ul.nav.nav-tabs
+      li.active
+        =link_to '10/24 (月)', '#day1', 'data-toggle' => 'tab'
+      li
+        =link_to '10/25 (火)', '#day2', 'data-toggle' => 'tab'
+    .tab-content
+      .tab-pane.active#day1
+        .scheduleTable
+          .scheduleTable_header
+            .scheduleTable_header_time
+              |
+            .scheduleTable_header_session
+              | Room A
+            .scheduleTable_header_session
+              | Room B
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 09:45
+            .scheduleTable_line_session-all
+              | Registration
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:45 - 10:00
+            .scheduleTable_line_session-all
+              | Opening
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #1 (45min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (45min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 13:00
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Lunch Break + Lunch Session
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+                  
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:00 - 13:20
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+          / 
+          / .scheduleTable_line
+          /   .scheduleTable_line_time
+          /     | 13:20 - 13:25
+          /   .scheduleTable_line_session-all
+          /     | 転換
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:25 - 13:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:45 - 14:05
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:05 - 14:25
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Sponsor Session (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+          / 
+          / .scheduleTable_line
+          /   .scheduleTable_line_time
+          /     | 14:25 - 14:30
+          /   .scheduleTable_line_session-all
+          /     | 転換
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:30 - 14:50
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+                  
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:50 - 15:10
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 16:40
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 実行委員パネルディスカッション (90min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:40 - 17:00
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:00 - 19:00
+            .scheduleTable_line_session-all
+              | Networking Session (120min)
+
+      .tab-pane#day2
+        .scheduleTable
+          .scheduleTable_header
+            .scheduleTable_header_time
+              |
+            .scheduleTable_header_session
+              | Room A
+            .scheduleTable_header_session
+              | Room B
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 09:45
+            .scheduleTable_line_session-all
+              | Registration
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:45 - 10:00
+            .scheduleTable_line_session-all
+              | Opening
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #2 (45min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (45min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 13:00
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Lunch Break + Lunch Session
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+                  
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:00 - 13:20
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+          / 
+          / .scheduleTable_line
+          /   .scheduleTable_line_time
+          /     | 13:20 - 13:25
+          /   .scheduleTable_line_session-all
+          /     | 転換
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:25 - 13:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:45 - 14:05
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:05 - 14:25
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Sponsor Session (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+          / 
+          / .scheduleTable_line
+          /   .scheduleTable_line_time
+          /     | 14:25 - 14:30
+          /   .scheduleTable_line_session-all
+          /     | 転換
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:30 - 14:50
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | 登壇枠 (20min)
+                .scheduleTable_line_speaker
+                  | Dummy Dummy / @Dummy
+                  
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:50 - 15:10
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 17:10
+            .scheduleTable_line_session-all
+              | アンカンファレンス (120min)
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:10 - 17:30
+            .scheduleTable_line_session-all.break
+              | Break
+
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:30 - 19:00
+            .scheduleTable_line_session-all
+              | Closing Session (90min)
+
+        
