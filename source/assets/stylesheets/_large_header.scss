@@ -13,10 +13,14 @@
     max-width: 800px;
     width: 100%;
     display: inline-block;
-    margin: 10px 0 80px;
+    margin: 10px 0 30px;
     padding: 0 10px;
     line-height: 1.1;
     font-size: 3.8em;
     font-family: $font-family-cursive;
+  }
+
+  &_subline {
+    margin-bottom: 10px;
   }
 }
