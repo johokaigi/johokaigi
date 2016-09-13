@@ -6,17 +6,48 @@
   color: #fff;
 
   &_siteCaption {
-    margin-top: 70px;
+    margin-top: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: .7em;
+    }
   }
 
   &_siteLogo {
     max-width: 800px;
     width: 100%;
     display: inline-block;
-    margin: 10px 0 80px;
+    margin: 20px 0 0;
     padding: 0 10px;
     line-height: 1.1;
-    font-size: 3.8em;
+    font-size: 4.2em;
+    font-family: $font-family-cursive;
+    transform: rotate(-6deg);
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 2em;
+    }
+  }
+
+  &_date {
+    font-family: $font-family-cursive;
+    margin-bottom: 30px;
+  }
+
+  &_signup {
+    max-width: 800px;
+    margin: 40px auto 10px;
+    border-top: 1px solid #22c59f;
+    padding-top: 20px;
+  }
+
+  &_commingsoon {
+    margin-top: 10px;
     font-family: $font-family-cursive;
   }
+
+  &_subline {
+    font-size: 13px;
+  }
+
 }

@@ -1,0 +1,20 @@
+.socialBtns {
+  text-align: center;
+  padding-left: 20px;
+
+  &_facebook,
+  &_twitter {
+    display: inline;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+
+  &_facebook {
+    div {
+      vertical-align: middle !important;
+    }
+    span {
+      vertical-align: top !important;
+    }
+  }
+}

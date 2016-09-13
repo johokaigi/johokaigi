@@ -1,19 +1,35 @@
 .largeHeader
   .containers
     nav.largeHeaderNavigation
+      p.largeHeader_siteCaption
+        | さぁはじめよう！日本のプロダクトマネジメント
+      h1.largeHeader_siteLogo
+        | Japan Product Manager
+        br
+        | Conference 2016
+      h2.largeHeader_date
+        | 10/24 - 10/25
       ul.list-unstyled
         / li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
         / li.largeHeaderNavigation_list = link_to 'Tips', '/tips'
         / li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
         / li.largeHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'
-        li.largeHeaderNavigation_list = link_to 'スケジュール', '/schedule'
-        li.largeHeaderNavigation_list = link_to '運営', '/staff'
-      p.largeHeader_siteCaption
-        | ～さぁはじめよう！日本のプロダクトマネジメント～
-      h1.largeHeader_siteLogo
-        | Japan Product Manager
-        br
-        | Conference 2016
+        li.largeHeaderNavigation_list
+          = link_to '/schedule' do
+            i.fa.fa-calendar
+            | &nbsp;
+            | スケジュール
+        li.largeHeaderNavigation_list
+          = link_to '/staff' do
+            i.fa.fa-users
+            | &nbsp;
+            | 運営
+      .largeHeader_signup
+        h2.largeHeader_commingsoon
+          | Comming Soon!
+        .largeHeader_subline
+          strong
+            | 9/16(金)　申込開始！
 
 section.section
   .container
@@ -109,3 +125,8 @@ section.section
         | Original web site design by #{link_to 'kony', 'https://github.com/konycc', target: '_blank'} from Increments Inc.
         br
         | Hosted by #{link_to 'GitHub', 'https://github.com/htomine/pmconf', target: '_blank'}
+    .socialBtns
+      .socialBtns_facebook
+        <div class="fb-like" data-href="http://pmconf.jp/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+      .socialBtns_twitter
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="pmconfjp">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
