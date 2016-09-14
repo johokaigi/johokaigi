@@ -1,25 +1,35 @@
 organizers:
   - name: stylishidea
+    twitter: https://twitter.com/stylishidea
     github: https://github.com/stylishidea
+    facebook: https://facebook.com/stylishidea
     profile_image_url: /assets/images/profile_images/stylishidea.png
   - name: TakuoIMBE
     github: https://github.com/im6e
     profile_image_url: /assets/images/profile_images/TakuoIMBE.png
   - name: takoratta
+    twitter: https://twitter.com/takoratta
     github: https://github.com/takoratta
+    facebook: https://facebook.com/takoratta
     profile_image_url: /assets/images/profile_images/takoratta.jpeg
   - name: aomegane
+    twitter: https://twitter.com/aomegane1985
     github: https://github.com/aomegane
+    facebook: https://facebook.com/sakamoto10423
     profile_image_url: /assets/images/profile_images/aomegane.jpeg
   - name: fullvirtue
     twitter: https://twitter.com/fullvirtue
+    github: https://github.com/fullvirtue
+    facebook: https://facebook.com/fullvirtue
     link: http://fullvirtue.com/
     profile_image_url: /assets/images/profile_images/fullvirtue.png
   - name: b-marsa
     github: https://github.com/b-marsa
     profile_image_url: /assets/images/profile_images/b-marsa.png
   - name: mizukitanno
+    twitter: https://twitter.com/mizukitanno
     github: https://github.com/mizukitanno
+    facebook: https://facebook.com/mizukitanno
     profile_image_url: /assets/images/profile_images/mizukitanno.png
   - name: htomine
     twitter: https://twitter.com/htomine
@@ -28,7 +38,9 @@ organizers:
     link: http://htomine.hateblo.jp/
     profile_image_url: /assets/images/profile_images/htomine.png
   - name: ykmc09
+    twitter: https://twitter.com/ykmc09_dev
     github: https://github.com/ykmc09
+    facebook: https://facebook.com/ykmc09
     profile_image_url: /assets/images/profile_images/ykmc09.jpeg
 
 collaborators:

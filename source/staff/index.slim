@@ -8,7 +8,7 @@ descriptipon: 運営スタッフ一覧と運営へのお問い合わせについ
     h1.pageHeader_title
       = current_page.data.title
   .staffList
-    h2.staffList_title スタッフ一覧
+    h2.staffList_title 実行委員一覧
     ul.list-unstyled.list-inline
       - data.staff.organizers.each do |organizer|
         = partial 'staff/human_card', locals: { human: organizer }
