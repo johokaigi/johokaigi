@@ -92,8 +92,14 @@ section.section
           .scheduleTable_line
             .scheduleTable_line_time
               | 10:00 - 10:45
-            .scheduleTable_line_session-all
-              | Keynote Session #1
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'speakers/TokuseiHiroto.jpg', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #1
+                .scheduleTable_line_speaker
+                  | by グーグル株式会社 Product Manager 徳生 裕人
           .scheduleTable_line
             .scheduleTable_line_time
               | 10:45 - 11:30
@@ -158,14 +164,6 @@ section.section
             .scheduleTable_line_session-all
               | Closing
 
-
-/ section.section
-/   .container
-/     h2.section_title 公募セッション募集
-/     .row
-/       .col-sm-10.col-sm-offset-1.section_body
-/         | 準備中です。
-
 / Articles Block
 / section.section
 /   .container
@@ -188,7 +186,7 @@ section.section
 /           | <a class="twitter-timeline" href="https://twitter.com/pmconf" data-widget-id="663690851407654913" data-height="400px">@pmconfさんのツイート</a>
 section.section
   .container
-    h2.section_title スポンサー
+    h2.section_title OUR SPONSORS
     h3 プラチナスポンサー
     .sponsors_list
       - data.sponsors.platina.each do |platina|
