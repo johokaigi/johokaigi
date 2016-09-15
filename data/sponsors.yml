@@ -29,3 +29,10 @@ drinks:
   - name: 株式会社サイバーエージェント
     url: https://www.cyberagent.co.jp/corporate/data/
     logo_image_url: /assets/images/sponsors/cyberagent.png
+communities:
+  - name: POStudy ～アジャイル・プロダクトマネジメント研究会～
+    url: http://www.postudy.com/
+    logo_image_url: /assets/images/sponsors/postudy.png
+  - name: Product Managers Japan (PMJP)
+    url: http://productmanagers.jp/
+    logo_image_url: /assets/images/sponsors/pmjp.png
