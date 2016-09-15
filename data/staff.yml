@@ -3,7 +3,7 @@ organizers:
     twitter: https://twitter.com/stylishidea
     github: https://github.com/stylishidea
     facebook: https://facebook.com/stylishidea
-    profile_image_url: /assets/images/profile_images/stylishidea.png
+    profile_image_url: /assets/images/profile_images/stylishidea.jpeg
   - name: TakuoIMBE
     github: https://github.com/im6e
     profile_image_url: /assets/images/profile_images/TakuoIMBE.png
@@ -30,6 +30,7 @@ organizers:
     twitter: https://twitter.com/mizukitanno
     github: https://github.com/mizukitanno
     facebook: https://facebook.com/mizukitanno
+    link: http://tannomizuki.hatenablog.com/
     profile_image_url: /assets/images/profile_images/mizukitanno.png
   - name: htomine
     twitter: https://twitter.com/htomine
