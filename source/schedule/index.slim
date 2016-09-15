@@ -16,122 +16,268 @@ descriptipon: カンファレンスのタイムテーブルについて紹介し
     .tab-content
       .tab-pane.active#day1
         .scheduleTable
-          .scheduleTable_header
-            .scheduleTable_header_time
-              |
-            .scheduleTable_header_session
-              | Room A
-            .scheduleTable_header_session
-              | Room B
-
           .scheduleTable_line
             .scheduleTable_line_time
               | 09:00 - 09:45
             .scheduleTable_line_session-all
               | Registration
-
           .scheduleTable_line
             .scheduleTable_line_time
               | 09:45 - 10:00
             .scheduleTable_line_session-all
-              | Opening (15min)
-
+              | Welcome Talk
           .scheduleTable_line
             .scheduleTable_line_time
-              | 10:00 - 11:30
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'speakers/TokuseiHiroto.jpg', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #1
+                .scheduleTable_line_speaker
+                  | by グーグル株式会社 Product Manager 徳生 裕人
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Special Session #1
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 12:20
             .scheduleTable_line_session-all
-              | Keynote Session #1 / Special Session (90min)
+              | Lunch Break
           .scheduleTable_line
             .scheduleTable_line_time
-              | 11:30 - 13:00
-            .scheduleTable_line_session-all
-              | Lunch Break / Lightning Talk (90min)
+              | 12:20 - 13:05
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
           .scheduleTable_line
             .scheduleTable_line_time
-              | 13:00 - 14:50
-            .scheduleTable_line_session-all
-              | Topic Session (110min)
-
+              | 13:05 - 13:50
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
           .scheduleTable_line
             .scheduleTable_line_time
-              | 14:50 - 15:10
+              | 13:50 - 14:05
             .scheduleTable_line_session-all.break
-              | Break (20min)
-
+              | Break
           .scheduleTable_line
             .scheduleTable_line_time
-              | 15:10 - 16:40
-            .scheduleTable_line_session-all
-              | Pannel Session (90min)
+              | 14:05 - 14:25
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
           .scheduleTable_line
             .scheduleTable_line_time
-              | 16:40 - 17:00
+              | 14:25 - 15:10
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 15:25
             .scheduleTable_line_session-all.break
-              | Break (20min)
-
+              | Break
           .scheduleTable_line
             .scheduleTable_line_time
-              | 17:00 - 19:00
-            .scheduleTable_line_session-all
-              | Networking Session (120min)
-
-      .tab-pane#day2
-        .scheduleTable
-          .scheduleTable_header
-            .scheduleTable_header_time
-              |
-            .scheduleTable_header_session
-              | Room A
-            .scheduleTable_header_session
-              | Room B
-
+              | 15:25 - 15:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
           .scheduleTable_line
             .scheduleTable_line_time
-              | 09:00 - 09:45
-            .scheduleTable_line_session-all
-              | Registration
-
+              | 15:45 - 16:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
           .scheduleTable_line
             .scheduleTable_line_time
-              | 09:45 - 10:00
-            .scheduleTable_line_session-all
-              | Opening (15min)
-
-          .scheduleTable_line
-            .scheduleTable_line_time
-              | 10:00 - 11:30
-            .scheduleTable_line_session-all
-              | Keynote Session #2 / Special Session (90min)
-          .scheduleTable_line
-            .scheduleTable_line_time
-              | 11:30 - 13:00
-            .scheduleTable_line_session-all
-              | Lunch Break / Lightning Talk (90min)
-          .scheduleTable_line
-            .scheduleTable_line_time
-              | 13:00 - 14:50
-            .scheduleTable_line_session-all
-              | Topic Session (110min)
-          .scheduleTable_line
-            .scheduleTable_line_time
-              | 14:50 - 15:10
+              | 16:30 - 16:45
             .scheduleTable_line_session-all.break
-              | Break (20min)
-
+              | Break
           .scheduleTable_line
             .scheduleTable_line_time
-              | 15:10 - 17:10
-            .scheduleTable_line_session-all
-              | Product Manager UnConference (120min)
-
-          .scheduleTable_line
-            .scheduleTable_line_time
-              | 17:10 - 17:30
-            .scheduleTable_line_session-all.break
-              | Break (20min)
-
+              | 16:45 - 17:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'profile_images/takoratta.jpeg', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | by Increments株式会社 プロダクトマネージャー 及川 卓也
           .scheduleTable_line
             .scheduleTable_line_time
               | 17:30 - 19:00
             .scheduleTable_line_session-all
-              | Closing Session (90min)
+              | Networking Party
+
+      .tab-pane#day2
+        .scheduleTable
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 09:45
+            .scheduleTable_line_session-all
+              | Registration
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:45 - 10:00
+            .scheduleTable_line_session-all
+              | Welcome Speech
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'speakers/MatsumotoRyosuke.jpg', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #2
+                .scheduleTable_line_speaker
+                  | by 株式会社ソウゾウ 代表取締役 松本 龍祐
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Special Session #2
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 12:20
+            .scheduleTable_line_session-all
+              | Lunch Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:20 - 13:05
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:05 - 13:50
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 13:50 - 14:05
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:05 - 14:25
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 14:25 - 15:10
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:10 - 15:25
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:25 - 15:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 15:45 - 16:30
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Topic Session
+                .scheduleTable_line_speaker
+                  | Comming Soon
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:30 - 16:45
+            .scheduleTable_line_session-all.break
+              | Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:45 - 18:15
+            .scheduleTable_line_session-all
+              | Product Manager UnConference
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 18:15 - 19:00
+            .scheduleTable_line_session-all
+              | Closing
