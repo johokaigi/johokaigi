@@ -98,6 +98,10 @@ section.section
 section.section
   .container
     h2.section_title スポンサー
+    h3 プラチナスポンサー
+    .sponsors_list
+      - data.sponsors.platina.each do |platina|
+        = link_to image_tag(platina.logo_image_url), platina.url, class: 'sponsors_list_item-platina', target: '_blank', title: platina.name, 'data-toggle' => 'tooltip'
     h3 ゴールドスポンサー
     .sponsors_list
       - data.sponsors.golds.each do |golds|
