@@ -57,8 +57,8 @@
       &-all {
         @extend .scheduleTable_line_session;
         display: inline-block;
-        text-align: center;
         font-weight: bold;
+        margin-left: 62px;
 
         &.break {
           font-weight: normal;
