@@ -155,8 +155,11 @@ section.section
             .scheduleTable_line_session-all
               | Closing
 
-    p.text-center
-      = link_to '詳細なタイムテーブルはこちら', '/schedule'
+    p.scheduleTable_detail
+      = link_to '/schedule' do
+        i.fa.fa-arrow-circle-right
+        | &nbsp;
+        | 詳細なタイムテーブルはこちら
 
 
 / Articles Block
