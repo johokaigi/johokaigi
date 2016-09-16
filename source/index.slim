@@ -70,7 +70,7 @@ section.section
 
 section.section
   .container
-    h2.section_title THE SCHEDULE
+    h2.section_title SPEAKERS & SCHEDULE
     ul.nav.nav-tabs
       li.active
         =link_to '10/24 (月)', '#day1', 'data-toggle' => 'tab'
@@ -169,6 +169,14 @@ section.section
               | 18:15 - 19:00
             .scheduleTable_line_session-all
               | Closing
+
+      ul.list-unstyled
+        li.largeHeaderNavigation_list
+          = link_to '/schedule' do
+            i.fa.fa-calendar
+            | &nbsp;
+            | 詳細なタイムテーブルはこちら
+
 
 / Articles Block
 / section.section
