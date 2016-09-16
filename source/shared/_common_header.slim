@@ -10,5 +10,10 @@
         / li.commonHeaderNavigation_list = link_to 'Tips', '/tips'
         / li.commonHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
         / li.commonHeaderNavigation_list = link_to '取材・情報発信', '/publishing-guideline'
+        li.commonHeaderNavigation_list
+          = link_to 'https://pmconfjp.doorkeeper.jp/events/52123', class: 'commonHeaderNavigation_signup', title: 'Doorkeeperで申込み', target: '_blank' do
+            i.fa.fa-external-link
+            | &nbsp;
+            | 参加申込み
         li.commonHeaderNavigation_list = link_to 'タイムテーブル', '/schedule'
         li.commonHeaderNavigation_list = link_to '運営', '/staff'
