@@ -31,7 +31,7 @@ activate :blog do |blog|
   blog.default_extension = '.md'
 end
 
-page '/', layout: 'no_header_layout'
+# page '/', layout: 'no_header_layout'
 page 'sitemap.xml', layout: 'xml_layout'
 
 helpers do
