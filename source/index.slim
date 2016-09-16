@@ -201,6 +201,9 @@ section.section
     .sponsors_list
       - data.sponsors.drinks.each do |drinks|
         = link_to image_tag(drinks.logo_image_url), drinks.url, class: 'sponsors_list_item-drinks', target: '_blank', title: drinks.name, 'data-toggle' => 'tooltip'
+    .sponsors_description
+      h4. スポンサーについて
+      p Japan Product Manager Conference 2016 では、本カンファレンスにご協賛いただけるスポンサー企業を募集しております。プロダクト開発の現場で活躍するプロダクトマネージャーに、自社をアピールできるまたとない機会です。協賛プログラムの詳細については、こちらより資料をダウンロードしてください。皆様のご支援をお待ちしております。
 
 section.section
   .container

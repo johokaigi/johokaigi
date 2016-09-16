@@ -16,7 +16,7 @@
       img {
         width: 100%;
       }
-      
+
       &-platina{
         @extend .sponsors_list_item;
         width: 300px;
@@ -41,5 +41,13 @@
         height: 120px;
       }
     }
+  }
+
+  &_description {
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+    padding-top: 15px;
+    line-height: 1.8;
+    color: #888;
   }
 }
