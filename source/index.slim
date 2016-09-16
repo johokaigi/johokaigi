@@ -8,30 +8,13 @@
         br
         | Conference 2016
       h2.largeHeader_date
-        | 10/24 - 10/25
-      ul.list-unstyled
-        / li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
-        / li.largeHeaderNavigation_list = link_to 'Tips', '/tips'
-        / li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
-        / li.largeHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'
-        li.largeHeaderNavigation_list
-          = link_to '/schedule' do
-            i.fa.fa-calendar
-            | &nbsp;
-            | タイムテーブル
-        li.largeHeaderNavigation_list
-          = link_to '/staff' do
-            i.fa.fa-users
-            | &nbsp;
-            | 運営
+        | 2016.10.24 - 25
+        span.largeHeader_place @ 渋谷マークシティ
       .largeHeader_signup
-        h2.largeHeader_commingsoon
-          | Join The Conference
-        .largeHeader_subline
-          strong
-            | さあ参加しましょう
-        h2.largeHeader_doorkeeper
-          = link_to 'お申し込みはこちら', 'https://pmconfjp.doorkeeper.jp/events/52123'
+        = link_to 'https://pmconfjp.doorkeeper.jp/events/52123', class: 'largeHeader_signup_button', title: 'Doorkeeperで申込み', target: '_blank' do
+          i.fa.fa-external-link
+          | &nbsp;
+          | 参加申込み
 
 section.section
   .container
@@ -101,7 +84,7 @@ section.section
                 .scheduleTable_line_title
                   | Keynote Session #1
                 .scheduleTable_line_speaker
-                  | by グーグル株式会社 Product Manager 徳生 裕人
+                  | by グーグル株式会社 製品開発本部長 徳生 裕人
           .scheduleTable_line
             .scheduleTable_line_time
               | 10:45 - 11:30

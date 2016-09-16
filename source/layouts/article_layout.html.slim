@@ -9,7 +9,7 @@ html
 
     = partial 'shared/common_header'
 
-    .container
+    .container.commonBody
       article.article[itemscope itemtype='http://schema.org/Article']
         time.article_time[itemprop='datePublished'] = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
         h1.article_title[itemporp='name'] = current_page.data.title

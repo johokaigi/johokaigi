@@ -1,6 +1,9 @@
 .commonHeader {
+  position: fixed;
   background-color: $brand-color;
   height: $header-height;
+  width: 100%;
+  z-index: 1;
 
   &_siteLogo {
     display: inline-block;
@@ -19,7 +22,7 @@
 //    display: inline-block;
 //  }
 
-  @media (max-width: $screen-sm-max) {
+  @media (max-width: $screen-xs-max) {
     text-align: center;
     vertical-align: middle;
     height: auto;
