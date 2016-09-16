@@ -1,102 +1,237 @@
 .largeHeader
   .containers
     nav.largeHeaderNavigation
-      ul.list-unstyled
-        li.largeHeaderNavigation_list = link_to '記事一覧', '/articles'
-        li.largeHeaderNavigation_list = link_to 'Tips', '/tips'
-        li.largeHeaderNavigation_list = link_to 'ロゴデータ', '/resources'
-        li.largeHeaderNavigation_list = link_to '取材・情報発信ガイドライン', '/publishing-guideline'
-        li.largeHeaderNavigation_list = link_to '運営', '/staff'
-
-    = image_tag '/assets/images/logo.svg', class: 'largeHeader_siteLogo',
-                title: 'JohoKaigi - 情報会議', alt: 'JohoKaigi - 情報会議'
+      p.largeHeader_siteCaption
+        | さぁはじめよう！日本のプロダクトマネジメント
+      h1.largeHeader_siteLogo
+        | Japan Product Manager
+        br
+        | Conference 2016
+      h2.largeHeader_date
+        | 2016.10.24 - 25
+        span.largeHeader_place @ 渋谷マークシティ
+      .largeHeader_signup
+        = link_to 'https://pmconfjp.doorkeeper.jp/events/52123', class: 'largeHeader_signup_button', title: 'Doorkeeperで申込み', target: '_blank' do
+          i.fa.fa-external-link
+          | &nbsp;
+          | 参加申込み
 
 section.section
   .container
-    h2.section_title JohoKaigi - 情報会議とは
+    h2.section_title Japan Product Manager Conference とは
     p
-      | 情報会議は、チームでの情報共有について、Tipsや悩みの共有や集約を通して、
-      | 情報の共有方法や情報共有をする文化作りをする方法を整理するためのコミュニティです。
-
-    h3 活動
-    ul
-      li オンラインにコミュニティ (<a href="https://teams.qiita.com/" target="_blank">Qiita:Team</a>) を作って情報交換をしています
-      li イベントを開催して情報交換をしています
-      li TipsをまとめてBlogで発信しています
-
-    h3 こんな人におすすめ
-    ul
-      li 良さそうなツールを見つけたけれど、うまく検討できなかった
-      li 導入してみたけれど、うまく使えなかった
-      li
-        | 自分の開発チームではうまくできなさそうだけど、他のチームでやってるのを見ると
-        | 「なるほど、確かにそういう風に使えたら良さそうですね」、などと思う
-
-    h3 こんな人にもおすすめ
-    ul
-      li うちのチームの情報共有をもっと良くしたい！
-      li 通知が多くて参ってる…。
-      li メールが多すぎるんだー！
-      li もっと効率的に情報を共有したいぞ
-
+      | 日本におけるプロダクトマネージメントに関わる人やそれを目指す人が集う機会を設けるため、この度、日本初のプロダクトマネージャーカンファレンスを開催する運びとなりました。
     p
-      | チーム内に留まりがちなこういった状況を、普段なかなか話す機会のないチーム外の人たちと共有し、
-      | 新しい気づきを持ち帰っていただけたらうれしいです。
+      | プロダクトマネージャーという職種の認知を高め、プロダクトマネージメント業務に携わる人々が情報や意見を交換することで共に学ぶ場を持つことが、創造性や先進性に富んだものづくりを行うには重要です。そのきっかけになるべく、今回のプロダクトマネージャーカンファレンスが企画されました。
 
 section.section
   .container
-    h2.section_title 次回イベント情報
-    - if data.peatix.try(:first)
-      .row
-        .col-sm-10.col-sm-offset-1
-          = data.peatix.first
-    - else
-      .row
-        .col-sm-10.col-sm-offset-1.section_waitingList
-          p
-            | 次回イベントの詳細は未定です
-            =< image_tag 'https://cdn.qiita.com/emoji/unicode/1f647.png', class: 'emoji', title: ':bow:', alt: ':bow:',  height: '20', width: '20', align: 'absmiddle'
-          p 参加してみたい！という方は下記フォームに連絡先をどうぞ。
-          p 開催決定時、優先的にご連絡します。
-          p
-            =link_to 'JohoKaigi 情報会議に参加したい - Google Forms', 'https://goo.gl/mOuwJ8',  target: '_blank'
-
-
-section.section
-  .container
-    h2.section_title 新着記事
-    - page_articles('articles').each do |article|
-      article.information
-        h1.information_title = link_to article.title, article.url
-        time.information_time = article.date.strftime('%Y/%m/%d')
-
-section.section.hidden-xs
-  .container
+    h2.section_title 開催概要
     .row
       .col-sm-6
-        aside
-          | <div class="fb-page" data-href="https://www.facebook.com/johokaigi" data-width="500px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/johokaigi"><a href="https://www.facebook.com/johokaigi">情報会議</a></blockquote></div></div>
-
-      .col-sm-6
-        aside
-          | <a class="twitter-timeline" href="https://twitter.com/JohoKaigi" data-widget-id="663690851407654913" data-height="400px">@JohoKaigiさんのツイート</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7698556383143!2d139.69607361525811!3d35.658041480199664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5630f6f559%3A0x6f4159c3e7fa59a8!2z44CSMTUwLTAwNDMg5p2x5Lqs6YO95riL6LC35Yy66YGT546E5Z2C77yR5LiB55uu77yR77yS4oiS77yR!5e0!3m2!1sja!2sjp!4v1472650823635" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+      .col-sm-6.section_body
+        dl.section_eventNote
+          dt
+            i.fa.fa-fw.fa-calendar
+            | &nbsp;
+            | 開催日時
+          dd
+            span.date
+              | 2016/10/24(月)～25(火)
+            span.time
+              | 09:45 ~ 19:00
+          dt
+            i.fa.fa-fw.fa-map-marker
+            | &nbsp;
+            | 開催場所
+          dd
+            | 株式会社サイバーエージェント
+            br
+            | 〒150-0043 東京都渋谷区道玄坂1丁目12番1号
+            br
+            | 渋谷マークシティ ウエスト13階 セミナールーム
+            =link_to 'https://www.cyberagent.co.jp/access_print/id=7035', 'https://www.cyberagent.co.jp/access_print/id=7035'
 
 section.section
   .container
-    h2.section_title オーガナイザー
-    ul.list-unstyled.list-inline.organizers
-      - data.staff.organizers.each do |human|
-        li.organizers_list
-          = image_tag human.profile_image_url, class: 'organizers_icon'
-          .organizers_name = human.name
+    h2.section_title SPEAKERS & SCHEDULE
+    ul.nav.nav-tabs
+      li.active
+        =link_to '10/24 (月)', '#day1', 'data-toggle' => 'tab'
+      li
+        =link_to '10/25 (火)', '#day2', 'data-toggle' => 'tab'
+    .tab-content
+      .tab-pane.active#day1
+        .scheduleTable
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 09:45
+            .scheduleTable_line_session-all
+              | Registration
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:45 - 10:00
+            .scheduleTable_line_session-all
+              | Welcome Talk
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'speakers/TokuseiHiroto.jpg', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #1
+                .scheduleTable_line_speaker
+                  | by グーグル株式会社 製品開発本部長 徳生 裕人
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session-all
+              | Special Session #1
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 12:20
+            .scheduleTable_line_session-all
+              | Lunch Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:20 - 17:30
+            .scheduleTable_line_session-all
+              | Sessions
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 17:30 - 19:00
+            .scheduleTable_line_session-all
+              | Networking Party
 
+      .tab-pane#day2
+        .scheduleTable
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:00 - 09:45
+            .scheduleTable_line_session-all
+              | Registration
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 09:45 - 10:00
+            .scheduleTable_line_session-all
+              | Welcome Speech
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:00 - 10:45
+            .scheduleTable_line_session
+              .scheduleTable_line_speakerIcon
+                = image_tag 'blank_user.png', width: '52', height: '52'
+              .scheduleTable_line_descriptions
+                .scheduleTable_line_title
+                  | Keynote Session #2
+                .scheduleTable_line_speaker
+                  | by 株式会社メルカリ（登壇者調整中）
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 10:45 - 11:30
+            .scheduleTable_line_session-all
+              | Special Session #2
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 11:30 - 12:20
+            .scheduleTable_line_session-all
+              | Lunch Break
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 12:20 - 16:30
+            .scheduleTable_line_session-all
+              | Sessions
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 16:45 - 18:15
+            .scheduleTable_line_session-all
+              | Product Manager UnConference
+          .scheduleTable_line
+            .scheduleTable_line_time
+              | 18:15 - 19:00
+            .scheduleTable_line_session-all
+              | Closing
+
+    p.scheduleTable_detail
+      = link_to '/schedule' do
+        i.fa.fa-arrow-circle-right
+        | &nbsp;
+        | 詳細なタイムテーブルはこちら
+
+
+/ Articles Block
+/ section.section
+/   .container
+/     h2.section_title 新着記事
+/     - page_articles('articles').each do |article|
+/       article.information
+/         h1.information_title = link_to article.title, article.url
+/         time.information_time = article.date.strftime('%Y/%m/%d')
+
+/ Social Media Block
+/ section.section.hidden-xs
+/   .container
+/     .row
+/       .col-sm-6
+/         aside
+/           | <div class="fb-page" data-href="https://www.facebook.com/pmconf" data-width="500px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pmconf"><a href="https://www.facebook.com/pmconf">pmconf2016</a></blockquote></div></div>
+/ 
+/       .col-sm-6
+/         aside
+/           | <a class="twitter-timeline" href="https://twitter.com/pmconf" data-widget-id="663690851407654913" data-height="400px">@pmconfさんのツイート</a>
+section.section
+  .container
+    h2.section_title OUR SPONSORS
+    h3 プラチナスポンサー
+    .sponsors_list
+      - data.sponsors.platina.each do |platina|
+        = link_to image_tag(platina.logo_image_url), platina.url, class: 'sponsors_list_item-platina', target: '_blank', title: platina.name, 'data-toggle' => 'tooltip'
+    h3 ゴールドスポンサー
+    .sponsors_list
+      - data.sponsors.golds.each do |golds|
+        = link_to image_tag(golds.logo_image_url), golds.url, class: 'sponsors_list_item-golds', target: '_blank', title: golds.name, 'data-toggle' => 'tooltip'
+    h3 シルバースポンサー
+    .sponsors_list
+      - if data.sponsors.silvers.present?
+        - data.sponsors.silvers.each do |silvers|
+          = link_to image_tag(silvers.logo_image_url), silvers.url, class: 'sponsors_list_item-silvers', target: '_blank', title: silvers.name, 'data-toggle' => 'tooltip'
+      - else
+        | 募集中
+    h3 ドリンクスポンサー
+    .sponsors_list
+      - data.sponsors.drinks.each do |drinks|
+        = link_to image_tag(drinks.logo_image_url), drinks.url, class: 'sponsors_list_item-drinks', target: '_blank', title: drinks.name, 'data-toggle' => 'tooltip'
+    .sponsors_description
+      h4. スポンサーについて
+      p Japan Product Manager Conference 2016 では、本カンファレンスにご協賛いただけるスポンサー企業を募集しております。プロダクト開発の現場で活躍するプロダクトマネージャーに、自社をアピールできるまたとない機会です。協賛プログラムの詳細については、以下の資料をご参照ください。皆様のご支援をお待ちしております。
+      = link_to '/assets/files/pmconfjp_sponsorship_letter.pdf', target: '_blank'
+        i.fa.fa-file-pdf-o
+        | &nbsp;
+        | Japan Product Manager Conference 2016 ご協賛のお願い
+
+section.section
+  .container
+    h2.section_title OFFICIAL COMMUNITIES
+    .sponsors_list
+      - data.sponsors.communities.each do |communities|
+        = link_to image_tag(communities.logo_image_url), communities.url, class: 'sponsors_list_item-drinks', target: '_blank', title: communities.name, 'data-toggle' => 'tooltip'
+
+section.section
+  .container
+    h2.section_title 主催
+    h4.text-center プロダクトマネージャーカンファレンス実行委員会
     p.text-center
-      = link_to 'スタッフ一覧', '/staff'
-
+      = link_to '実行委員一覧', '/staff'
     .sponsorsText
       p
-        | Started by #{link_to 'Increments Inc.', 'http://increments.co.jp/', target: '_blank'}
-        br
         | Original web site design by #{link_to 'kony', 'https://github.com/konycc', target: '_blank'} from Increments Inc.
         br
-        | Hosted by #{link_to 'GitHub', 'https://github.com/johokaigi/johokaigi', target: '_blank'}
+        | Hosted by #{link_to 'GitHub', 'https://github.com/htomine/pmconf', target: '_blank'}
+    .socialBtns
+      .socialBtns_facebook
+        <div class="fb-like" data-href="http://pmconf.jp/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+      .socialBtns_twitter
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="pmconfjp">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

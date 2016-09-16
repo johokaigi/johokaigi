@@ -1,0 +1,93 @@
+.scheduleTable {
+  $time-cell-width: 120px;
+
+  width: 100%;
+  margin-top: 20px;
+
+  &_header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
+    &_time {
+      width: $time-cell-width;
+      min-width: $time-cell-width;
+      margin-right: 15px;
+      border-right: 1px solid #eee;
+    }
+
+    &_session {
+      flex-grow: 1;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 0 10px;
+
+      & + & {
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+      }
+    }
+  }
+
+  &_line {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+
+    &_time {
+      width: $time-cell-width;
+      min-width: $time-cell-width;
+      font-size: .9em;
+      margin-right: 15px;
+      border-right: 1px solid #eee;
+    }
+
+    &_session {
+      display: flex;
+      flex-grow: 1;
+      padding-right: 16px;
+
+      & + & {
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+      }
+
+      &-all {
+        @extend .scheduleTable_line_session;
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 62px;
+
+        &.break {
+          font-weight: normal;
+        }
+      }
+    }
+
+    &_descriptions {
+      padding: 0 10px;
+    }
+
+    &_speakerIcon {
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &_title {
+      font-weight: bold;
+    }
+
+    &_speaker {
+      font-size: .8em;
+      color: #aaa;
+    }
+  }
+
+  &_detail {
+    text-align: center;
+    margin-top: 40px;
+  }
+}

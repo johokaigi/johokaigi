@@ -3,12 +3,72 @@
   width: 100%;
   text-align: center;
   vertical-align: bottom;
+  color: #fff;
+
+  &_siteCaption {
+
+    @media (max-width: $screen-xs-max) {
+      font-size: .7em;
+    }
+  }
 
   &_siteLogo {
     max-width: 800px;
     width: 100%;
     display: inline-block;
-    margin: 130px 0;
-    padding: 0 20px;
+    margin: 8px 0;
+    padding: 0 10px;
+    line-height: 1.1;
+    font-size: 4em;
+    font-family: $font-family-cursive;
+    transform: rotate(-6deg);
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 3em;
+    }
   }
+
+  &_date {
+    font-family: $font-family-cursive;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &_place {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+
+  &_signup {
+    margin: 40px auto 20px;
+
+    &_button {
+      border-radius: 4px;
+      padding: 10px 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #585858;
+      background-color: #ffee00;
+      transition: all .1s ease-in-out;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        background-color: #d02525;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &_commingsoon {
+    margin-top: 10px;
+    font-family: $font-family-cursive;
+  }
+
+  &_subline {
+    font-size: 13px;
+  }
+
 }

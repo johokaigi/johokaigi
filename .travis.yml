@@ -3,10 +3,11 @@ rvm: 2.2.3
 script: bundle exec middleman build
 env:
   global:
-    - GIT_COMMITTER_NAME='htomine@travis-ci'
-    - GIT_COMMITTER_EMAIL='htomine@qiita.com'
-    - GIT_AUTHOR_NAME='htomine@travis-ci'
-    - GIT_AUTHOR_EMAIL='htomine@qiita.com'
-    - secure: TcscSyrhTKPRCzq/KlhIDCZWA3iz+9pIh7KvX0pROoCuZKQO+/cH4q+FhvMqfIGOAbnWi39SJmEekM64ugutja87nRk/lYTrPL/gMTkId+UUrDOZF6iUckH0FRyU/M0tiM51xpRxwsdjMke+m5cPgpZq9Q3vYuZDX/E4j46F75bwb+R1h9AGLmOTHfQB41uNm20jo10jhNAA4dywLM6Zjzz+zgqe7dYCBDk+OVcYYo/1e1wSGekoF2eslzRhVTs/muTcRtvldVcXqtu45ZPmk5HusVvKNHaq1znqIYs+H8tR+US/zP6qNQy06FzCeoAKvedXLcUhCM0mqUEQ9r9Qsvgx7fif1sHAVAe0BmYm9N1Q6kwrGz/jIeqSIKItyF7YfPPyBdzOjsJlvJP4mZTapyGVuqRnkynX2v9F8yazfphvfI/YIn2/qMUPmrOIQcHStmYD2I8rUOxkOkmGZ8VhdmLcS0LsQycnclUSAzKbQMqfeU6quEblxIVkgyeG5AEi9sjnoP6Vj/n0e0PqTEl/DUo5Ip7QxaKWZDR2ClVGQzGJc+5tffA1UwJ3Wilxa2fQ/CYkFYc4g91Iqg7skGfdr01fCPrhE34RBTbNIE5cmsBoRTz85F8c7qiGbb3zjjSyec3kJF4itdhMJHdGiYtM0IaLjAPXBFWt1gWM3dRqWlQ=
+  - GIT_COMMITTER_NAME='htomine@travis-ci'
+  - GIT_COMMITTER_EMAIL='htomine@qiita.com'
+  - GIT_AUTHOR_NAME='htomine@travis-ci'
+  - GIT_AUTHOR_EMAIL='htomine@qiita.com'
+  - secure: YZmILnD41EbwEO915a8MpjRiIfkQsXqZOd+Q4ovRFd/9LNb/3GkofYlrE6/Mqa4rLZ54bm7ubRiEV/IBFO3fOSYM1ZByIH+Z0Cbs2ZoVpj1fW5go8f41FSJkoYoYviQRlvOwwIzSwpB7c9weDCJupu2H3BHFURoM6SG9PyMvPCpoW/we+4t4iIJKxbg0gVZ6FsuzrvJTzkZEgMOnovSH8JWd/DyTs6f63MDherlbt6fjDKLDm96+fYM18vpu6oRPXP3M/uI+qXNFtHApV3b3a0KHBQAkV9rK8CSFxbURjR6rNJIO4wiG+Ul3fhRv+GKs7RePhi3exjKg55QeafC1zugJbYPK2Dr/Pn5rhSqYT2Z4lR438RaPkw/aL+G45oyeOAckVthrVhhFYSGfJGQNBckTv5CCJKJjAZXL7QEEFbw6+RfoS+D88iCgiyNDVORR1YBW8nRqZhIxy73uhoxuezhLqw98p5MMbAnnWOrAPTejgxECGpgMZF/x2ZX6L4DCK0NmdID5qhSIx66Y6ugklmn+zbeaW+zpt2jfdFy9rjk3imPwS45XBzZUqSSdEB2tD0QXxGFEh1tZ5m0hFDhvIhjlnpGWl9446lCt3Fty+cMk9cXowbMWkfcEZM8DySGNJewYtg3UBvzvKnFDDcIGQn299HlOFMEdMH1TGP6XVBo=
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy
+  >/dev/null 2>&1'

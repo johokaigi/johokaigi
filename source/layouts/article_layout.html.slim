@@ -9,7 +9,7 @@ html
 
     = partial 'shared/common_header'
 
-    .container
+    .container.commonBody
       article.article[itemscope itemtype='http://schema.org/Article']
         time.article_time[itemprop='datePublished'] = Date.parse(current_page.data.date).strftime('%Y/%m/%d')
         h1.article_title[itemporp='name'] = current_page.data.title
@@ -26,13 +26,13 @@ html
                   .article_authorName[itemprop='name'] = current_page.data.author
 
           .article_socialButtons.hidden-xs
-            .article_tweetBtn
-              a[href="https://twitter.com/share"
-                class="twitter-share-button"
-                data-url="#{page_url}"
-                data-text="#{page_title}"
-                data-related="JohoKaigi"
-                data-hashtags="johokaigi"] Tweet
+            / .article_tweetBtn
+            /   a[href="https://twitter.com/share"
+            /     class="twitter-share-button"
+            /     data-url="#{page_url}"
+            /     data-text="#{page_title}"
+            /     data-related="pmconf"
+            /     data-hashtags="pmconf"] Tweet
             .article_likeBtn
               .fb-like[data-href="#{page_url}"
                        data-layout="button_count"
